@@ -1,0 +1,98 @@
+.containerTitle{
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+}
+
+
+.containerTitle > div {
+    background-clip: text;  
+    -webkit-background-clip: text;
+    font-size: 60px;
+    font-weight: 700;
+    grid-area: overlap;
+    -webkit-text-stroke: 4px transparent;
+}
+
+
+div.bg {
+    background-image: repeating-linear-gradient( 105deg, 
+    rgb(184, 184, 184) 0%, 
+    rgb(19, 19, 19) 5%,
+    rgb(184, 184, 184) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+}
+
+
+div.fg{
+    background-image: repeating-linear-gradient( 5deg,  
+    rgb(184, 184, 184) 0% , 
+    rgb(255, 255, 255) 23%, 
+    rgb(184, 184, 184) 31%);
+    color: #1e2127;
+    transform: scale(1);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .containerTitle > div {
+        background-clip: text;  
+        -webkit-background-clip: text;
+        font-size: 50px;
+        font-weight: 700;
+        grid-area: overlap;
+        -webkit-text-stroke: 4px transparent;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 825px) {
+    .containerTitle > div {
+        background-clip: text;  
+        -webkit-background-clip: text;
+        font-size: 40px;
+        font-weight: 700;
+        grid-area: overlap;
+        -webkit-text-stroke: 4px transparent;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 660px) {
+    .containerTitle > div {
+        background-clip: text;  
+        -webkit-background-clip: text;
+        font-size: 30px;
+        font-weight: 700;
+        grid-area: overlap;
+        -webkit-text-stroke: 4px transparent;
+    }
+}
+
+
+
+
+@media screen and (max-width: 485px) {
+    .containerTitle > div {
+        background-clip: text;  
+        -webkit-background-clip: text;
+        font-size: 25px;
+        font-weight: 700;
+        grid-area: overlap;
+        -webkit-text-stroke: 4px transparent;
+    }
+}

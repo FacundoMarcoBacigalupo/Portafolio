@@ -1,0 +1,133 @@
+#grillaContact{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "contact1 contact2 contact3";
+}
+
+
+
+#contact1{
+    grid-area: contact1;
+    background-color: #424242;
+}
+
+#contact2{
+    grid-area: contact2;
+    background-color: #0B66C3;
+}
+
+#contact3{
+    grid-area: contact3;
+    background-color: #EDEDED;
+}
+
+
+
+.imgRRSS{
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.stylesA{
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    box-shadow: inset 0 0 0 0 rgb(25, 25, 25);
+    color: rgb(19, 19, 19);
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.stylesA:hover{
+    color: rgb(184, 184, 184);
+    box-shadow: inset 200px 0 0 0 rgb(25, 25, 25);
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .imgRRSS{
+        margin-left: 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .stylesA{
+        font-size: 30px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .imgRRSS{
+        margin-left: 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .stylesA{
+        font-size: 25px;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .imgRRSS{
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .stylesA{
+        font-size: 25px;
+    }
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 641px) {
+    .imgRRSS{
+        margin-left: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .stylesA{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width: 564px) {
+    .imgRRSS{
+        margin-left: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .stylesA{
+        font-size: 18px;
+    }
+    
+}

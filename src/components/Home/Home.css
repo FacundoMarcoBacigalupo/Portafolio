@@ -1,0 +1,75 @@
+#containerMain{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+        "leftSide rightSide";
+    grid-gap: 20px;
+    margin: 40px;
+    margin-top: 50px;
+}
+
+
+
+.leftSide{
+    grid-area: leftSide;
+    text-align: center;
+    color: rgb(184, 184, 184);
+}
+
+.imgLeft{
+    border-radius: 80px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
+/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
+/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
+/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
+
+
+
+.rightSide{
+    grid-area: rightSide;
+    text-align: left;
+    margin-top: 20px;
+}
+.rightSide p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(184, 184, 184);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    #containerMain{
+        display: grid;
+        grid-template-rows: 200px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "leftSide leftSide"
+            "rightSide rightSide";
+        grid-gap: 20px;
+        margin: 40px;
+        margin-top: 50px;
+    }
+
+    .rightSide{
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .rightSide p{
+        font-size: 18px;
+    }
+}
