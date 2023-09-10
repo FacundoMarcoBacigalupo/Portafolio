@@ -9,7 +9,7 @@ import javascript from '../../img/javascript.png'
 import reactJs from '../../img/reactJs.png'
 import responsive from '../../img/responsive.png'
 import sass from '../../img/sass.png'
-import "./knows.css"
+import "./Knows.css"
 
 
 const Knows = () => {
