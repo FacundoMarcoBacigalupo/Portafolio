@@ -4,7 +4,6 @@
     width: 180px;
     height: 55px;
     perspective: 1000px;
-    box-shadow: 1px 5px 20px rgb(19, 19, 19);
 }
 
 
@@ -13,7 +12,7 @@
     letter-spacing: 1px;
     transform-style: preserve-3d;
     transform: translateZ(-25px);
-    transition: transform .25s;
+    transition: transform .5s;
 }
 
 

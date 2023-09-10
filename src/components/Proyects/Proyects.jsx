@@ -1,54 +1,49 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import MFL from '../../img/MFL-Agencia-Marketing-Digital.png'
 import NbStyle from '../../img/nbStyle.jpg'
-import Clima from '../../img/clima.png'
 import Landing from '../../img/landing.jpg'
 import ToDo from '../../img/ToDo.jpg'
 import Papelera from '../../img/Papelera.jpg'
-import NiceTitle from "../NiceTitle/NiceTitle.jsx"
+import Clima from '../../img/clima.jpg'
 import "./proyects.css"
 
 
-
-const Proyects = () => {
+const Proyects2 = () => {
     return (
-        <Fragment>
-            <NiceTitle Title={"Proyectos"} />
+        <article className='backgroundBox'>
+            <h2 className='titlePresenting'>Proyectos</h2>
 
-            <article id='grillaProyects' className='articelNASHE'>
-                        <div id='img1' class="card1">
-                            <a href='https://agencia-mfl.netlify.app'><img src={MFL} alt="Sitio Web de una agencia de marketing digital (MFL)" /></a>
-                            <p className='textCard'>Sitio Web de una agencia de marketing digital (MFL)</p>
+                <section className='containterProyects2'>
+                    <div className="l-container">
+                        <div className="b-game-card">
+                            <a href='https://agencia-mfl.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${MFL})`}}><p className='textCard'>Sitio Web de una agencia de marketing digital (MFL)</p></a>
                         </div>
 
-                        <div id='img2' class="card1">
-                            <a href="https://ecommerce-nbstyle.netlify.app"><img src={NbStyle} alt="Simulación de un Ecommerce" /></a>
-                            <p className='textCard'>Simulación de un Ecommerce</p>
+                        <div className="b-game-card">  
+                            <a href='https://ecommerce-nbstyle.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${NbStyle})`}}><p className='textCard'>Simulación de un Ecommerce</p></a>  
                         </div>
 
-                        <div id='img3' class="card1">
-                            <a href="https://facundomarcobacigalupo.github.io/Sito-Web-Clima/"><img src={Clima} alt="Sitio Web del clima" /></a>
-                            <p className='textCard'>Sitio Web del clima</p>
+                        <div className="b-game-card">  
+                            <a href='https://lista-de-tareas-todo.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${ToDo})`}}><p className='textCard'>ToDo, lista de tareas</p></a>  
                         </div>
 
-                        <div id='img4' class="card1">
-                            <a href="https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/"><img src={Landing} alt="Landing page simple de un Ecommerce" /></a>
-                            <p className='textCard'>Landing page simple de un Ecommerce</p>
+                        <div className="b-game-card">  
+                            <a href='https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/' className="b-game-card__cover" style={{backgroundImage: `url(${Landing})`}}><p className='textCard'>Landing page simple de un Ecommerce</p></a>  
                         </div>
 
-                        <div id='img5' class="card1">
-                            <a href="https://lista-de-tareas-todo.netlify.app"><img src={ToDo} alt="ToDo, lista de tareas" /></a>
-                            <p className='textCard'>ToDo, lista de tareas</p>
+                        <div className="b-game-card">  
+                            <a href='https://papelera-canuelas.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${Papelera})`}}><p className='textCard'>Sitio Web de un Emprendimiento, es de un proveedor minorista</p></a>  
                         </div>
 
-                        <div id='img6' class="card1">
-                            <a href="https://papelera-canuelas.netlify.app"><img src={Papelera} alt="Sitio Web de un Emprendimiento, es de un proveedor minorista" /></a>
-                            <p className='textCard'>Sitio Web de un Emprendimiento, es de un proveedor minorista</p>
+                        
+                        <div className="b-game-card">
+                            <a href='https://facundomarcobacigalupo.github.io/Sito-Web-Clima/' className="b-game-card__cover" style={{backgroundImage: `url(${Clima})`}}><p className='textCard'>Sitio Web del clima</p></a>  
                         </div>
-            </article>
-        </Fragment>
+                    </div>
+                </section>
+        </article>
     )
 }
 
 
-export default Proyects
+export default Proyects2

@@ -1,7 +1,7 @@
 import React from 'react'
-import img from '../../img/fa.png'
 import Iam from "../Iam/Iam.jsx"
 import Button from "../Button/Button.jsx"
+import PresentationImage from '../PresentationImage/PresentationImage.jsx'
 import "./Home.css"
 
 
@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <main id='containerMain'>
             <section className='leftSide'>
-                <img className='imgLeft' src={img} alt="Img" />
+                <PresentationImage />
             </section>
 
             <section className='rightSide'>

@@ -2,14 +2,13 @@ import React, { Fragment } from 'react'
 import gitHub from "../../img/githubFooter.png"
 import linkedin from "../../img/linkedinFooter.png"
 import gmail from "../../img/gmail.png"
-import NiceTitle from '../NiceTitle/NiceTitle.jsx'
 import "./Contact.css"
 
 
 const Contact = () => {
     return (
         <Fragment>
-            <NiceTitle Title={"Contacto"}/>
+            <h2 className='titlePresenting'>Contacto</h2>
 
             <section id='grillaContact'>
                 <div id='contact1'>

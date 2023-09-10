@@ -13,22 +13,8 @@
 
 .leftSide{
     grid-area: leftSide;
-    text-align: center;
-    color: rgb(184, 184, 184);
+    margin-right: 220px;
 }
-
-.imgLeft{
-    border-radius: 80px;
-    height: 300px;
-    width: 200px;
-    object-fit: cover;
-    object-position: center;
-}
-/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
-/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
-/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
-/*HACER LA ANIMACION DE LA IMAGEN 3D QUE SALGA PARA ARRIBA */
-
 
 
 .rightSide{
@@ -64,6 +50,10 @@
 
     .rightSide{
         margin-top: 100px;
+    }
+
+    .leftSide{
+        grid-area: leftSide;
     }
 }
 

@@ -9,14 +9,13 @@ import javascript from '../../img/javascript.png'
 import reactJs from '../../img/reactJs.png'
 import responsive from '../../img/responsive.png'
 import sass from '../../img/sass.png'
-import NiceTitle from "../NiceTitle/NiceTitle.jsx"
-import "./Knows.css"
+import "./knows.css"
 
 
 const Knows = () => {
     return (
-        <article id='knowBackground'>
-            <NiceTitle Title={"Mis conocimiento y herramientas"}/>
+        <article className='backgroundBox'>
+            <h2 className='titlePresenting'>Mis conocimiento y herramientas</h2>
 
             <section id='grillaContainer'>
                 <div id='img1'>

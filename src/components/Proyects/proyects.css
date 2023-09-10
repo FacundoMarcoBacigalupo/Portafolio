@@ -1,160 +1,112 @@
-#grillaProyects{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "img1 img2 img3"
-    "img4 img5 img6";
-  row-gap: 1px;
-  column-gap: 10%;
-  justify-content: center;
+.containterProyects2{  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
 }
-
-
-
-.articelNASHE{
-  margin-top: 0px;
-  margin-bottom: 100px;
-  transform: perspective(900px);
-  transform-style: preserve-3d;
-}
-
-
-
-
-.card1{
-  text-align:center;
-  width: 300px;
-  height: 350px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  border: 2px solid rgba(255, 255, 255, 0.125);
-  transition:.6s;
-  transform: rotatex(40deg) translatey(-100px) translatez(-100px);
-  box-shadow: 0px 20px 60px rgba(184, 184, 184, 0.11);
-  border-radius: 20px;
-  text-decoration: none;
-}
-.card1:hover{
-  transform: rotatex(0deg);
-  transform: rotatez(0deg);
-  transition: all .6s;
-  box-shadow: 20px 20px 20px rgba(184, 184, 184, 0.11);
-}
-.card1 img{
-  transform: translateY(15px);
-  width: 90%;
-  height: 200px;
-  border-radius: 20px;
-  object-fit: cover;
-  object-position: center;
-}
-
 
 
 .textCard{
-  text-align:center;
-  width: 270px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 20px;
-  transform: translatex(12px);
-  color: rgb(184, 184, 184);
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(184, 184, 184);
+    filter: drop-shadow(1px 1px 0px rgb(0, 0, 0));
 }
 
 
-
-#img1{
-  grid-area: img1;
-}
-
-#img2{
-  grid-area: img2;
-}
-
-#img3{
-  grid-area: img3;
-}
-
-#img4{
-  grid-area: img4;
-}
-
-#img5{
-  grid-area: img5;
-}
-
-#img6{
-  grid-area: img6;
+.l-container{  
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);  
+    grid-gap: 30px;  
+    width: 100%;  
+    max-width: 1200px;  
+    padding: 30px;  
 }
 
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1110px) {
-  #grillaProyects{
-    grid-template-areas:
-      "img1 img2"
-      "img3 img4"
-      "img5 img6";
-    justify-content: center;
-  }
-
-  .card1{
-    text-align:center;
-    width: 300px;
-    height: 350px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.125);
-    transition:.6s;
-    transform: rotatex(40deg) translatey(-100px) translatez(-100px);
-    box-shadow: 0px 20px 60px rgba(184, 184, 184, 0.11);
-    border-radius: 20px;
-    text-decoration: none;
-  }
+.b-game-card{ 
+    cursor: pointer;
+    position: relative;  
+    z-index: 1;  
+    width: 100%;  
+    padding-bottom: 150%;  
+    perspective: 1000px;  
 }
 
 
-
-@media screen and (max-width: 685px) {
-  #grillaProyects{
-    grid-template-areas:
-      "img1"
-      "img2"
-      "img3"
-      "img4"
-      "img5"
-      "img6";
-      gap: 50px;
-    justify-content: center;
-  }
-
-  .card1{
-    text-align:center;
-    width: 300px;
-    height: 350px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.125);
-    transition:.6s;
-    transform: rotatex(5deg) translatey(0px) translatez(0px);
-    box-shadow: 0px 20px 60px rgba(184, 184, 184, 0.11);
-    border-radius: 20px;
-    text-decoration: none;
-  }
+.b-game-card__cover{  
+    position: absolute;  
+    z-index: 1;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    overflow: hidden;  
+    background-image: linear-gradient(120deg, rgb(119, 0, 0) 0%, rgb(19, 19, 19) 100%);  
+    background-size: cover;  
+    background-position: center;
+    perspective-origin: 50% 50%;  
+    transform-style: preserve-3d;  
+    transform-origin: top center;  
+    will-change: transform;  
+    transform: skewX(0.001deg);  
+    transition: transform 0.35s ease-in-out;  
 }
+
+
+.b-game-card__cover::after{  
+    display: block;  
+    content: '';  
+    position: absolute;  
+    z-index: 100;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 120%;  
+    background: linear-gradient(226deg, rgba(255, 255, 255, 0.192) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);  
+    transform: translateY(-60%);  
+    will-change: transform;  
+    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);  
+}
+
+
+.b-game-card:hover .b-game-card__cover{  
+    transform: rotateX(7deg) translateY(-6px);  
+}
+
+
+.b-game-card:hover .b-game-card__cover::after{  
+    transform: translateY(0%);  
+}
+
+
+.b-game-card::before{  
+    display: block;  
+    content: '';  
+    position: absolute;  
+    top: 5%;  
+    left: 5%;  
+    width: 90%;  
+    height: 90%;  
+    background: rgba(0, 0, 0, 0.5);  
+    box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);  
+    will-change: opacity;  
+    transform-origin: top center;  
+    transform: skewX(0.001deg);  
+    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;  
+}
+
+
+.b-game-card:hover::before{  
+    opacity: 0.6;  
+    transform: rotateX(7deg) translateY(-6px) scale(1.05);  
+}  
+
+
+
+
+
+@media screen and (max-width: 760px){  
+    .l-container{  
+        grid-template-columns: repeat(2, 1fr);  
+    }  
+}  

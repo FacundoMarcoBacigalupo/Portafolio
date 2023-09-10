@@ -5,7 +5,7 @@ import "./iam.css"
 const Iam = () => {
     return (
         <div className="container">
-            <p id='titlePresenting'>Hola 👋 Yo soy</p>
+            <p className='titlePresenting'>Hola 👋 Yo soy</p>
 
             <section className="animation">
                 <div className="first"><div>Facundo Marco Bacigalupo</div></div>
