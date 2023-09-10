@@ -22,10 +22,11 @@
 
 
 
-.cover-image{
+.image1{
     width: 200px;
     height: 280px;
     object-fit: cover;
+    object-position: center;
 }
 
 
@@ -54,7 +55,7 @@
 .wrapper::before{
     top: 0;
     height: 280px;
-    background-color: #070707;
+    background-color: #000000d8;
 }
 
 
@@ -77,8 +78,11 @@
 
 
 
-.character{
+.image2{
     width: 200px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
     opacity: 0;
     transition: all 0.5s;
     position: absolute;
@@ -86,7 +90,7 @@
 }
 
 
-.card:hover .character{
+.card:hover .image2{
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
 }
