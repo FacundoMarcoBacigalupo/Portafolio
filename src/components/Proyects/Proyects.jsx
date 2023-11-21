@@ -17,7 +17,8 @@ const Proyects2 = () => {
                     <div className="l-container">
                         <article className='containerTextCard'>
                             <div className="b-game-card">
-                                <a href='https://agencia-mfl.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${MFL})`}}></a>
+                                <a href='https://agencia-mfl.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${MFL})`}}>
+                                </a>
                             </div>
                             <p className='textCard'>Sitio Web de una agencia de marketing digital (MFL)</p>
                         </article>
@@ -25,14 +26,16 @@ const Proyects2 = () => {
 
                         <article className='containerTextCard'>
                             <div className="b-game-card">  
-                                <a href='https://ecommerce-nbstyle.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${NbStyle})`}}></a>
+                                <a href='https://ecommerce-nbstyle.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${NbStyle})`}}>
+                                </a>
                             </div>
                             <p className='textCard'>Simulación de un Ecommerce</p>
                         </article>
 
                         <article className='containerTextCard'>
                             <div className="b-game-card">  
-                                <a href='https://lista-de-tareas-todo.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${ToDo})`}}></a>  
+                                <a href='https://lista-de-tareas-todo.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${ToDo})`}}>
+                                </a>  
                             </div>
                             <p className='textCard'>ToDo, lista de tareas</p>
                         </article>
@@ -40,7 +43,8 @@ const Proyects2 = () => {
 
                         <article className='containerTextCard'>
                             <div className="b-game-card">  
-                                <a href='https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/' className="b-game-card__cover" style={{backgroundImage: `url(${Landing})`}}></a>  
+                                <a href='https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/' className="b-game-card__cover" style={{backgroundImage: `url(${Landing})`}}>
+                                </a>  
                             </div>
                             <p className='textCard'>Landing page simple de un Ecommerce</p>
                         </article>
@@ -48,7 +52,8 @@ const Proyects2 = () => {
 
                         <article className='containerTextCard'>
                             <div className="b-game-card">  
-                                <a href='https://papelera-canuelas.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${Papelera})`}}></a>  
+                                <a href='https://papelera-canuelas.netlify.app' className="b-game-card__cover" style={{backgroundImage: `url(${Papelera})`}}>
+                                </a>  
                             </div>
                             <p className='textCard'>Sitio Web de un Emprendimiento, es de un proveedor minorista</p>
                         </article>
@@ -56,7 +61,8 @@ const Proyects2 = () => {
 
                         <article className='containerTextCard'>
                             <div className="b-game-card">
-                                <a href='https://facundomarcobacigalupo.github.io/Sito-Web-Clima/' className="b-game-card__cover" style={{backgroundImage: `url(${Clima})`}}></a>
+                                <a href='https://facundomarcobacigalupo.github.io/Sito-Web-Clima/' className="b-game-card__cover" style={{backgroundImage: `url(${Clima})`}}>
+                                </a>
                             </div>
                             <p className='textCard'>Sitio Web del clima</p>
                         </article>
