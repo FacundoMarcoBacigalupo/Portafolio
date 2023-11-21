@@ -1,15 +1,13 @@
+.containerTextCard{
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 10px;
+}
+
+
 .containterProyects2{  
     display: flex;  
     justify-content: center;  
     align-items: center;  
-}
-
-
-.textCard{
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(184, 184, 184);
-    filter: drop-shadow(1px 1px 0px rgb(0, 0, 0));
 }
 
 
@@ -19,14 +17,13 @@
     grid-gap: 30px;  
     width: 100%;  
     max-width: 1200px;  
-    padding: 30px;  
 }
 
 
 .b-game-card{ 
     cursor: pointer;
-    position: relative;  
-    z-index: 1;  
+    position: relative;
+    z-index: 1;
     width: 100%;  
     padding-bottom: 150%;  
     perspective: 1000px;  
@@ -35,7 +32,7 @@
 
 .b-game-card__cover{  
     position: absolute;  
-    z-index: 1;  
+    z-index: 1;
     top: 0;  
     left: 0;  
     width: 100%;  
@@ -50,6 +47,7 @@
     will-change: transform;  
     transform: skewX(0.001deg);  
     transition: transform 0.35s ease-in-out;  
+    border-radius: 10px;
 }
 
 
@@ -103,10 +101,36 @@
 
 
 
+.textCard{
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(184, 184, 184);
+    filter: drop-shadow(1px 1px 0px rgb(0, 0, 0));
+}
+
+
+
+
+
+@media screen and (max-width: 950px){  
+    .l-container{  
+        grid-template-columns: repeat(3, 1fr);  
+    }  
+}  
 
 
 @media screen and (max-width: 760px){  
-    .l-container{  
+    .l-container{
         grid-template-columns: repeat(2, 1fr);  
+        grid-gap: 0px; 
+    } 
+}
+
+
+@media screen and (max-width: 620px){  
+    .l-container{  
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 0px;  
     }  
-}  
+} 
