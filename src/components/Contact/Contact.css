@@ -4,25 +4,33 @@
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "contact1 contact2 contact3";
+    "contact1 contact1 contact1"
+    "contact2 contact3 contact4";
 }
 
 
 
 #contact1{
     grid-area: contact1;
-    background-color: #424242;
+    background-color: #2cb444;
+    text-align: center;
 }
 
 #contact2{
     grid-area: contact2;
-    background-color: #0B66C3;
+    background-color: #424242;
 }
 
 #contact3{
     grid-area: contact3;
+    background-color:  #0B66C3;
+}
+
+#contact4{
+    grid-area: contact4;
     background-color: #EDEDED;
 }
+
 
 
 
@@ -37,16 +45,19 @@
     margin: 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     box-shadow: inset 0 0 0 0 rgb(25, 25, 25);
     color: rgb(19, 19, 19);
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 
+
 .stylesA:hover{
     color: rgb(184, 184, 184);
     box-shadow: inset 200px 0 0 0 rgb(25, 25, 25);
 }
+
+
 
 
 
@@ -57,7 +68,7 @@
         width: 70px;
         height: 70px;
     }
-
+    
     .stylesA{
         font-size: 30px;
     }
@@ -72,7 +83,7 @@
         width: 70px;
         height: 70px;
     }
-
+    
     .stylesA{
         font-size: 25px;
     }
@@ -89,7 +100,7 @@
         width: 50px;
         height: 50px;
     }
-
+    
     .stylesA{
         font-size: 25px;
     }
@@ -108,7 +119,7 @@
         width: 45px;
         height: 45px;
     }
-
+    
     .stylesA{
         font-size: 20px;
     }
@@ -125,7 +136,7 @@
         width: 45px;
         height: 45px;
     }
-
+    
     .stylesA{
         font-size: 18px;
     }
