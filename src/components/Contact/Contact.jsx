@@ -3,10 +3,12 @@ import gitHub from "../../img/githubFooter.png"
 import linkedin from "../../img/linkedinFooter.png"
 import gmail from "../../img/gmail.png"
 import whatsApp from "../../img/whatsapp.png"
+import GmailLink from '../GmailLink/GmailLink'
 import "./Contact.css"
 
 
 const Contact = () => {
+
     return (
         <Fragment>
             <h2 className='titlePresenting'>Contacto</h2>
@@ -29,7 +31,7 @@ const Contact = () => {
 
                 <div id='contact4'>
                     <img className='imgRRSS' src={gmail} alt="Gmail" />
-                    <a className='stylesA' href='https://mail.google.com/mail/u/1/#sent' target="_blank" rel="noreferrer">Gmail</a>
+                    <GmailLink />
                 </div>
             </section>
         </Fragment>

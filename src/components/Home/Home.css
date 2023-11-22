@@ -1,3 +1,10 @@
+#title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
 #containerMain{
     display: grid;
     grid-template-rows: auto;
