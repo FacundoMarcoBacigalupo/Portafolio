@@ -1,5 +1,5 @@
 import React from 'react'
-import facu1 from '../../img/fa1.jpg'
+import facu1 from '../../assets/img/fa1.jpg'
 import "./presentationImage.css"
 
 

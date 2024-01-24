@@ -1,11 +1,11 @@
 import React from 'react'
-import MFL from '../../img/MFL-Agencia-Marketing-Digital.png'
-import NbStyle from '../../img/nbStyle.jpg'
-import Landing from '../../img/landing.jpg'
-import ToDo from '../../img/ToDo.jpg'
-import Papelera from '../../img/Papelera.jpg'
-import Clima from '../../img/clima.jpg'
-import Marvel from "../../img/marvel.jpg"
+import MFL from '../../assets/img/MFL-Agencia-Marketing-Digital.png'
+import NbStyle from '../../assets/img/nbStyle.jpg'
+import Landing from '../../assets/img/landing.jpg'
+import ToDo from '../../assets/img/ToDo.jpg'
+import Papelera from '../../assets/img/Papelera.jpg'
+import Clima from '../../assets/img/clima.jpg'
+import Marvel from "../../assets/img/marvel.jpg"
 import "./proyects.css"
 
 

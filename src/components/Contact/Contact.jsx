@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
-import gitHub from "../../img/githubFooter.png"
-import linkedin from "../../img/linkedinFooter.png"
-import gmail from "../../img/gmail.png"
-import whatsApp from "../../img/whatsapp.png"
+import gitHub from "../../assets/img/githubFooter.png"
+import linkedin from "../../assets/img/linkedinFooter.png"
+import gmail from "../../assets/img/gmail.png"
+import whatsApp from "../../assets/img/whatsapp.png"
 import GmailLink from '../GmailLink/GmailLink'
 import "./Contact.css"
 

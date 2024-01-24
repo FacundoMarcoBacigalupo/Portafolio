@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from "../Button/Button.jsx"
 import PresentationImage from '../PresentationImage/PresentationImage.jsx'
+import ButtonDownload from "../ButtonDownload/ButtonDownload.jsx"
 import "./Home.css"
 
 
@@ -12,9 +13,10 @@ const Home = () => {
             </section>
 
             <section className='rightSide'>
-                <p id='title'>Hola, soy Facundo Marco Bacigalupo y soy Desarrollador Web</p>
-                <p>Me entusiasma la Programación, Marketing Digital y desarrollar mis habilidades en el ámbito en el que me especializo. Me considero responsable, disciplinado y entusiasta. Disfruto trabajar en equipo y utilizar esos encuentros para nutrirme de conocimientos. Me apasionan los libros sobre desarrollo personal y el universo cinematográfico de Marvel.</p>
-                <Button />
+                <p className='g1' id='title'>Hola, soy Facundo Marco Bacigalupo y soy Desarrollador Web</p>
+                <p className='g2'>Me entusiasma la Programación, Marketing Digital y desarrollar mis habilidades en el ámbito en el que me especializo. Me considero responsable, disciplinado y entusiasta. Disfruto trabajar en equipo y utilizar esos encuentros para nutrirme de conocimientos. Me apasionan los libros sobre desarrollo personal y el universo cinematográfico de Marvel.</p>
+                <Button className='g3'/>
+                <ButtonDownload className='g4'/>
             </section>
         </main>
     )

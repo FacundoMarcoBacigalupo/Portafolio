@@ -1,14 +1,25 @@
-#grillaContainer{
+.container{
+    margin: 100px;
+    margin-bottom: 200px;
+}
+
+    /* 5 */
+#grillaContainerr{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "img1 img2 img3 img4 img5"
-        "img6 img7 img8 img9 img10"
-        "img11 img12 img12 img12 img12";
+        "title1 title1 title1 title1 title1"
+        "img1 img2 img2 img2 img2"
+        "title2 title2 title2 title2 title2"
+        "img3 img4 img5 img6 img7"
+        "title3 title3 title3 title3 title3"
+        "img8 img9 img10 img11 img12";
     grid-gap: 20px;
     margin: 50px;
+    border-bottom: 2 solid #fff;
 }
+
 
 
 
@@ -20,8 +31,28 @@
 }
 
 
+.categories{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2;
+    text-align: center;
+    margin-top: 50px;
+}
+.categories::first-letter{
+    font-size: 40px;
+}
 
 
+
+#title1{
+    grid-area: title1;
+}
+#title2{
+    grid-area: title2;
+}
+#title3{
+    grid-area: title3;
+}
 #img1{
     grid-area: img1;
 }
@@ -75,6 +106,7 @@
 
 
 
+/*
 @media screen and (max-width: 1100px) {
     .styleImg{
         height: 60%;
@@ -83,12 +115,22 @@
         object-position: center;
     }
     
-    #grillaContainer{
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: auto;
+    #grillaContainer1{
         grid-template-areas:
-            "img1 img2 img3 img4"
-            "img5 img6 img7 img8"
+            "img1 img2";
+    }
+
+    #grillaContaine2{
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "img3 img4"
+            "img5 img6 img7";
+    }
+
+    #grillaContaine3{
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "img8"
             "img9 img10 img11 img12";
     }
 }
@@ -96,50 +138,83 @@
 
 
 
+
 @media screen and (max-width: 920px) {
-    #grillaContainer{
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: auto;
+    #grillaContainer1{
+        grid-template-rows: 1fr;
         grid-template-areas:
-            "img1 img2 img3"
-            "img4 img5 img6"
-            "img7 img8 img9"
-            "img10 img11 img12";
+            "img1 img2";
+    }
+
+    #grillaContaine2{
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "img3 img4 img5"
+            "img6 img7";
+    }
+
+    #grillaContaine3{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "img8"
+            "img9 img10 img11"
+            "img12";
     }
 }
+
 
 
 
 
 @media screen and (max-width: 710px) {
-    #grillaContainer{
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: auto;
+    #grillaContainer1{
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            "img1 img2"
-            "img3 img4"
-            "img5 img6"
-            "img7 img8"
-            "img9 img10"
-            "img11 img12";
+            "img1 img2";
+    }
+
+    #grillaContaine2{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "img3"
+            "img4 img5"
+            "img6 img7";
+    }
+
+    #grillaContaine3{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "img8 img9"
+            "img10 img11"
+            "img12";
     }
 }
 
 
 
 
+
 @media screen and (max-width: 500px) {
-    #grillaContainer{
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: auto;
+    #grillaContainer1{
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "img1"
-            "img2"
+            "img2";
+    }
+
+    #grillaContaine2{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
             "img3"
             "img4"
             "img5"
             "img6"
-            "img7"
+            "img7";
+    }
+
+    #grillaContaine3{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
             "img8"
             "img9"
             "img10"
@@ -147,3 +222,5 @@
             "img12";
     }
 }
+
+*/
