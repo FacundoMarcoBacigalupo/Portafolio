@@ -50,6 +50,6 @@
 
 
 #styleButton:active{
-    scale: .8;
-    transition: all 1s
+    scale: .9;
+    transition: all .4s
 }

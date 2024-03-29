@@ -15,8 +15,8 @@ const Home = () => {
             <section className='rightSide'>
                 <p className='g1' id='title'>Hola, soy Facundo Marco Bacigalupo y soy Desarrollador Web</p>
                 <p className='g2'>Me entusiasma la Programación, Marketing Digital y desarrollar mis habilidades en el ámbito en el que me especializo. Me considero responsable, disciplinado y entusiasta. Disfruto trabajar en equipo y utilizar esos encuentros para nutrirme de conocimientos. Me apasionan los libros sobre desarrollo personal y el universo cinematográfico de Marvel.</p>
-                <Button className='g3'/>
-                <ButtonDownload className='g4'/>
+                <Button href={"https://wa.me/+5401127398858"} className='g3'/>
+                <ButtonDownload className='g3'/>
             </section>
         </main>
     )

@@ -4,7 +4,6 @@ import CVFile from '../../assets/files/CV-Facundo-Marco-Bacigalupo-Programador.p
 import "./buttonDownload.css"
 
 
-
 const ButtonDownload = () =>{
   const dowload = () =>{
       fetch(CVFile)
@@ -16,10 +15,10 @@ const ButtonDownload = () =>{
 
 
   return (
-    <div onClick={() => dowload()} className="box-1">
-      <div className="btn btn-one">
-        <span>Descargar CV</span>
-      </div>
+    <div onClick={() => dowload()}>
+      <span id='styleButton2'>
+        <span id="styleB"> </span>
+      </span>
     </div>
   )
 }

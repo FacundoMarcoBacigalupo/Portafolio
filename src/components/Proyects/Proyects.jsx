@@ -15,7 +15,8 @@ const Proyects2 = () => {
             <h2 className='titlePresenting'>Proyectos</h2>
 
                 <section className='containterProyects2'>
-                    <div className="l-container">
+                    <div className="gridContainer">
+
                         <article className='containerTextCard'>
                             <div className="b-game-card">
                                 <a href='https://agencia-mfl.netlify.app' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${MFL})`}}>
@@ -76,6 +77,7 @@ const Proyects2 = () => {
                             </div>
                             <p className='textCard'>Sitio Web sobre Marvel que muestra los comics y series que tiene utilizando la API de marvel.</p>
                         </article>
+                        
                     </div>
                 </section>
         </article>
