@@ -1,115 +1,142 @@
-.containerTextCard{
-    box-shadow: 1px 2px 10px 1px #fff;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+.containerProyects{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "c1 c2 c3 c4"
+    "c5 c6 c7 c8";
+    grid-gap: 20px;
+}
+
+#c1{
+    grid-area: c1;
+}
+#c2{
+    grid-area: c2;
+}
+#c3{
+    grid-area: c3;
+}
+#c4{
+    grid-area: c4;
+}
+#c5{
+    grid-area: c5;
+}
+#c6{
+    grid-area: c6;
+}
+#c7{
+    grid-area: c7;
+}
+#c8{
+    grid-area: c8;
 }
 
 
-.containterProyects2{  
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
+.card {
+    height: 390px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.555);
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 40px rgb(41, 41, 41);
+    transition: all .5s;
 }
 
 
 
-.gridContainer{  
-    display: grid;  
-    grid-template-columns: repeat(4, 1fr);  
-    grid-gap: 30px;  
-    width: 100%;  
-    max-width: 1200px;  
+/* THUMB */
+.card__thumb {
+    height: 390px;
+    overflow: hidden;
+    background-color: #000;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__thumb img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card:hover .card__thumb {
+    height: 230px;
+}
+
+.card:hover .card__thumb img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
-.b-game-card{ 
-    cursor: pointer;
+
+/* card_BODY */
+.card__body {
     position: relative;
-    z-index: 1;
-    width: 100%;  
-    padding-bottom: 150%;  
-    perspective: 1000px;  
+    height: 120px;
+    padding: 20px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
 }
 
-
-.b-game-card__cover{  
-    position: absolute;  
-    z-index: 1;
-    top: 0;  
-    left: 0;  
-    width: 100%;  
-    height: 100%;  
-    overflow: hidden;  
-    background-image: linear-gradient(120deg, rgb(119, 0, 0) 0%, rgb(19, 19, 19) 100%);  
-    background-size: cover;  
-    background-position: center;
-    perspective-origin: 50% 50%;  
-    transform-style: preserve-3d;  
-    transform-origin: top center;  
-    will-change: transform;  
-    transform: skewX(0.001deg);  
-    transition: transform 0.35s ease-in-out;  
-    border-radius: 10px;
+.card:hover .card__body {   
+    height: 160px;
 }
 
-
-.b-game-card__cover::after{  
-    display: block;  
-    content: '';  
-    position: absolute;  
-    z-index: 100;  
-    top: 0;  
-    left: 0;  
-    width: 100%;  
-    height: 120%;  
-    background: linear-gradient(226deg, rgba(255, 255, 255, 0.192) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);  
-    transform: translateY(-60%);  
-    will-change: transform;  
-    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);  
-}
-
-
-.b-game-card:hover .b-game-card__cover{  
-    transform: rotateX(7deg) translateY(-6px);  
-}
-
-
-.b-game-card:hover .b-game-card__cover::after{  
-    transform: translateY(0%);  
-}
-
-
-.b-game-card::before{  
-    display: block;  
-    content: '';  
-    position: absolute;  
-    top: 5%;  
-    left: 5%;  
-    width: 90%;  
-    height: 90%;  
-    background: rgba(0, 0, 0, 0.5);  
-    box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);  
-    will-change: opacity;  
-    transform-origin: top center;  
-    transform: skewX(0.001deg);  
-    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;  
-}
-
-
-.b-game-card:hover::before{  
-    opacity: 0.6;  
-    transform: rotateX(7deg) translateY(-6px) scale(1.05);  
-}  
-
-
-
-.textCard{
-    margin: 20px;
-    font-size: 18px;
+.card__title {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 20px;
     font-weight: bold;
-    color: rgb(184, 184, 184);
-    filter: drop-shadow(1px 1px 0px rgb(0, 0, 0));
+}
+
+.card__more {
+    text-decoration: none;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    border: 1px solid #000;
+    color: #000;
+    background-color: crimson;
+    font-weight: 900;
+    transform: translateY(45px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.card__more:hover{
+    color: crimson;
+    background-color: #000;
+    transition: all .8s;
+}
+
+.card:hover .card__more {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 
@@ -118,24 +145,46 @@
 
 
 
-@media screen and (max-width: 950px){  
-    .l-container{  
-        grid-template-columns: repeat(3, 1fr);  
-    }  
-}  
-
-
-@media screen and (max-width: 760px){  
-    .l-container{
-        grid-template-columns: repeat(2, 1fr);  
-        grid-gap: 0px; 
-    } 
+@media screen and (max-width: 1420px) {
+    .containerProyects{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "c1 c2 c3"
+            "c4 c5 c6"
+            "c7 c8 c8";
+    }
 }
 
 
-@media screen and (max-width: 620px){  
-    .l-container{  
-        grid-template-columns: repeat(1, 1fr); 
-        grid-gap: 0px;  
-    }  
-} 
+@media screen and (max-width: 1080px) {
+    .containerProyects{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "c1 c2"
+            "c3 c4"
+            "c5 c6"
+            "c7 c8";
+    }
+}
+
+
+@media screen and (max-width: 728px) {
+    .containerProyects{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        "c6"
+        "c7"
+        "c8";
+    }
+}

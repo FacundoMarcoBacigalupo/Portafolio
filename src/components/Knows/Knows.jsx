@@ -1,93 +1,74 @@
 import React from 'react'
-import VScode from '../../assets/img/VScode.png'
-import bootstrap from '../../assets/img/bootstrap.png'
-import css from '../../assets/img/css.png'
-import git from '../../assets/img/git.png'
-import github from '../../assets/img/github.png'
-import html from '../../assets/img/html.png'
-import javascript from '../../assets/img/javascript.png'
-import reactJs from '../../assets/img/reactJs.png'
-import responsive from '../../assets/img/responsive.png'
-import sass from '../../assets/img/sass.png'
-import mongodb from '../../assets/img/mongodb.png'
-import nodejs from '../../assets/img/nodejs.png'
+import bootstrap from '../../assets/icons/icons8-boostrap.svg'
+import git from '../../assets/icons/icons8-git.svg'
+import html from "../../assets/icons/html5-svgrepo-com.svg"
+import javascript from '../../assets/icons/javascript-svgrepo-com.svg'
+import reactJs from '../../assets/icons/react-svgrepo-com.svg'
+import responsive from '../../assets/icons/responsive-design-symbol-svgrepo-com.svg'
+import sass from '../../assets/icons/sass-svgrepo-com.svg'
+import css from '../../assets/icons/css3-02-svgrepo-com.svg'
+import mongodb from '../../assets/icons/dbs-mongodb-svgrepo-com.svg'
+import nodejs from "../../assets/icons/node-js-svgrepo-com.svg"
 import "./Knows.css"
 
 
 const Knows = () => {
     return (
-        <section className='container'>
-            <h2 className='titlePresenting'>Mis conocimiento y herramientas</h2>    
-            <article id='grillaContainerr'>
-                    <p id='title1' className='categories'>BackEnd</p>
-                    <div id='img1'>
-                        <img className='styleImg' src={nodejs} alt="Know" />
+        <>
+            <h2 className='titlePresenting'>Skills</h2>
+            
+            <article className='container'>
+                    <a href="https://nodejs.org/en" target="_blank" rel="noreferrer" id='card1' className='cardSkills'>
                         <p>Node.js</p>
-                    </div>
-
-                    <div id='img2'>
-                        <img className='styleImg' src={mongodb} alt="Know" />
+                        <img src={nodejs} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://www.mongodb.com/es" target="_blank" rel="noreferrer" id='card2' className='cardSkills'>
                         <p>MongoDB</p>
-                    </div>
-
-
-
-
-                    <p id='title2' className='categories'>FrontEnd</p>
-                    <div id='img3'>
-                        <img className='styleImg' src={css} alt="Know" />
+                        <img src={mongodb} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noreferrer" id='card3' className='cardSkills'>
                         <p>Css</p>
-                    </div>
-
-                    <div id='img4'>
-                        <img className='styleImg' src={sass} alt="Know" />
+                        <img src={css} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://sass-lang.com" target="_blank" rel="noreferrer" id='card4' className='cardSkills'>
                         <p>Sass</p>
-                    </div>
-
-                    <div id='img5'>
-                        <img className='styleImg' src={reactJs} alt="Know" />
-                        <p>React.Js</p>
-                    </div>
-
-                    <div id='img6'>
-                        <img className='styleImg' src={javascript} alt="Know" />
-                        <p>JavaScript</p>
-                    </div>
-
-                    <div id='img7'>
-                        <img className='styleImg' src={html} alt="Know" />
-                        <p>html</p>
-                    </div>
-
-
-
-                    <p id='title3' className='categories'>Herramientas</p>
-                    <div id='img8'>
-                        <img className='styleImg' src={github} alt="Know" />
-                        <p>GitHub</p>
-                    </div>
-
-                    <div id='img9'>
-                        <img className='styleImg' src={responsive} alt="Know" />
-                        <p>Diseño Responvisve</p>
-                    </div>
-
-                    <div id='img10'>
-                        <img className='styleImg' src={git} alt="Know" />
-                        <p>Git</p>
-                    </div>
-
-                    <div id='img11'>
-                        <img className='styleImg' src={bootstrap} alt="Know" />
+                        <img src={sass} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://www.40defiebre.com/que-es/diseno-responsive" target="_blank" rel="noreferrer" id='card5' className='cardSkills'>
+                        <p>Responsive</p>
+                        <img src={responsive} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://es.react.dev" target="_blank" rel="noreferrer" id='card6' className='cardSkills'>
+                        <p>React.js</p>
+                        <img src={reactJs} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noreferrer" id='card7' className='cardSkills'>
+                        <p>Javascript</p>
+                        <img src={javascript} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noreferrer" id='card8' className='cardSkills'>
+                        <p>Html</p>
+                        <img src={html} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://getbootstrap.com" target="_blank" rel="noreferrer" id='card9' className='cardSkills'>
                         <p>Bootstrap</p>
-                    </div>
-
-                    <div id='img12'>
-                        <img className='styleImg' src={VScode} alt="Know" />
-                        <p>Visual Studio Code</p>
-                    </div>
+                        <img src={bootstrap} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://git-scm.com" target="_blank" rel="noreferrer" id='card10' className='cardSkills'>
+                        <p>Git</p>
+                        <img src={git} alt="Skill" />
+                    </a>
             </article>
-        </section>
+        </>
     )
 }
 

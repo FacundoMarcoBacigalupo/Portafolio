@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import gitHub from "../../assets/img/githubFooter.png"
 import linkedin from "../../assets/img/linkedinFooter.png"
 import gmail from "../../assets/img/gmail.png"
@@ -10,9 +10,6 @@ import "./Contact.css"
 const Contact = () => {
 
     return (
-        <Fragment>
-            <h2 className='titlePresenting'>Contacto</h2>
-
             <section id='grillaContact'>
                 <div id='contact1'>
                     <img className='imgRRSS' src={whatsApp} alt="WhatsApp" />
@@ -34,7 +31,6 @@ const Contact = () => {
                     <GmailLink />
                 </div>
             </section>
-        </Fragment>
     )
 }
 

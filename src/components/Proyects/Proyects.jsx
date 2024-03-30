@@ -6,81 +6,95 @@ import ToDo from '../../assets/img/ToDo.jpg'
 import Papelera from '../../assets/img/Papelera.jpg'
 import Clima from '../../assets/img/clima.jpg'
 import Marvel from "../../assets/img/marvel.jpg"
+import Blog from "../../assets/img/blog.jpeg"
 import "./proyects.css"
 
 
 const Proyects2 = () => {
     return (
-        <article className='backgroundBox'>
+        <>
             <h2 className='titlePresenting'>Proyectos</h2>
-
-                <section className='containterProyects2'>
-                    <div className="gridContainer">
-
-                        <article className='containerTextCard'>
-                            <div className="b-game-card">
-                                <a href='https://agencia-mfl.netlify.app' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${MFL})`}}>
-                                </a>
-                            </div>
-                            <p className='textCard'>Sitio Web de una agencia de marketing digital.</p>
-                        </article>
-
-
-                        <article className='containerTextCard'>
-                            <div className="b-game-card">  
-                                <a href='https://ecommerce-nbstyle.netlify.app' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${NbStyle})`}}>
-                                </a>
-                            </div>
-                            <p className='textCard'>Simulación completa de un Ecommerce de zapatillas.</p>
-                        </article>
-
-                        <article className='containerTextCard'>
-                            <div className="b-game-card">  
-                                <a href='https://lista-de-tareas-todo.netlify.app' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${ToDo})`}}>
-                                </a>  
-                            </div>
-                            <p className='textCard'>ToDo, lista de tareas mas un apartado para buscar y descargar imagenes.</p>
-                        </article>
-
-
-                        <article className='containerTextCard'>
-                            <div className="b-game-card">  
-                                <a href='https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${Landing})`}}>
-                                </a>  
-                            </div>
-                            <p className='textCard'>Landing page simple de muestra sobre Ecommerce de zapatillas.</p>
-                        </article>
-
-
-                        <article className='containerTextCard'>
-                            <div className="b-game-card">  
-                                <a href='https://papelera-canuelas.netlify.app' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${Papelera})`}}>
-                                </a>  
-                            </div>
-                            <p className='textCard'>Sitio Web de un proveedor minorista de bolsas.</p>
-                        </article>
-
-
-                        <article className='containerTextCard'>
-                            <div className="b-game-card">
-                                <a href='https://facundomarcobacigalupo.github.io/Sito-Web-Clima/' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${Clima})`}}>
-                                </a>
-                            </div>
-                            <p className='textCard'>Sitio Web clima que te muestra como esta el clima en tu ciudad.</p>
-                        </article>
-
-
-                        <article className='containerTextCard'>
-                            <div className="b-game-card">
-                                <a href='https://info-marvel.netlify.app/' className="b-game-card__cover" target="_blank" rel="noreferrer" style={{backgroundImage: `url(${Marvel})`}}>
-                                </a>
-                            </div>
-                            <p className='textCard'>Sitio Web sobre Marvel que muestra los comics y series que tiene utilizando la API de marvel.</p>
-                        </article>
-                        
+            
+            <section className='containerProyects'>
+                <article id='c1' className="card">
+                    <img className="card__thumb" src={MFL} alt='MFL' />
+                    <div className="card__body">
+                        <h2 className="card__title">Sitio Web de una agencia de marketing digital</h2>
+                        <a href='https://agencia-mfl.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
-                </section>
-        </article>
+                </article>
+                
+                <article id='c2' className="card">
+                    <header className="card__thumb">
+                        <img src={NbStyle} alt='NbStyle' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">Simulación completa de un Ecommerce de zapatillas</h2>
+                        <a href='https://ecommerce-nbstyle.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                    </div>
+                </article>
+                
+                <article id='c3' className="card">
+                    <header className="card__thumb">
+                        <img src={ToDo} alt='ToDo' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">ToDo, lista de tareas mas un apartado para buscar y descargar imagenes</h2>
+                        <a href='https://lista-de-tareas-todo.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                    </div>
+                </article>
+                
+                <article id='c4' className="card">
+                    <header className="card__thumb">
+                        <img src={Landing} alt='Landing' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">Landing page simple de muestra sobre Ecommerce de zapatillas</h2>
+                        <a href='https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                    </div>
+                </article>
+                
+                <article id='c5' className="card">
+                    <header className="card__thumb">
+                        <img src={Papelera} alt='Papelera' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">Sitio Web de un proveedor minorista de bolsas</h2>
+                        <a href='https://papelera-canuelas.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                    </div>
+                </article>
+                
+                <article id='c6' className="card">
+                    <header className="card__thumb">
+                        <img src={Clima} alt='Clima' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">Sitio Web clima que te muestra como esta el clima en tu ciudad</h2>
+                        <a href='https://facundomarcobacigalupo.github.io/Sito-Web-Clima/' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                    </div>
+                </article>
+                
+                <article id='c7' className="card">
+                    <header className="card__thumb">
+                        <img src={Marvel} alt='Marvel' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">API de Marvel que muestra los comics, series y personajes</h2>
+                        <a href='https://info-marvel.netlify.app/' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                    </div>
+                </article>
+                
+                <article id='c8' className="card">
+                    <header className="card__thumb">
+                        <img src={Blog} alt='Blog' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">Blog</h2>
+                        <a href='https://canuelas-te-escucha.netlify.app/' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                    </div>
+                </article>
+            </section>
+        </>
     )
 }
 
