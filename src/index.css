@@ -33,13 +33,12 @@ article{
 
 .titlePresenting{
   text-shadow: 0 0 5px #ffffff4f;
-  font-size: 45px;
+  font-size: 40px;
   padding: 0px;
-  border-bottom: 1px solid rgb(224, 224, 224);
-  width: 27%;
-  margin-left: 100px;
   margin-top: 80px;
   margin-bottom: 0px;
+  text-align: left;
+  margin-left: 8%;
 }
 
 
@@ -77,34 +76,17 @@ article{
 
 
 
+
+
 @media screen and (max-width: 970px) {
   .titlePresenting{
-      text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
-      font-size: 25px;
+      font-size: 35px;
   }
 }
 
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 700px) {
   .titlePresenting{
-      text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
-      font-size: 23px;
-  }
-}
-
-
-
-@media screen and (max-width: 800px) {
-  .titlePresenting{
-      text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
-      font-size: 22px;
-  }
-}
-
-
-@media screen and (max-width: 561px) {
-  .titlePresenting{
-      text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
-      font-size: 20px;
+      font-size: 30px;
   }
 }

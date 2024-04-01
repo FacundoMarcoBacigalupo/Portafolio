@@ -3,6 +3,12 @@
 	margin-bottom: 50px;
 }
 
+
+#containerCon{
+	width: 80%;
+	margin: auto;
+}
+
 .description{
     text-align: center;
     margin-top: 20px;
@@ -12,8 +18,6 @@
 
 
 #containerContact{
-    width: 80%;
-    margin: auto;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -49,14 +53,17 @@
 	margin-bottom: 50px;
 	border: 2px solid #000;
 	color: #000;
+	background-color: rgb(214, 214, 214);
 }
 .formStyle input:focus {
 	outline: none;
 	border: 2px solid crimson;
+	transition: all .5s;
 }
 .formStyle textarea:focus {
 	outline: none;
 	border: 2px solid crimson;
+	transition: all .3s;
 }
 
 
@@ -108,4 +115,26 @@
 .containerFooterRRSS img:hover{
 	scale: 1.2;
 	transition: all .6s;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 790px) {
+    .description{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .description{
+        font-size: 18px;
+    }
 }

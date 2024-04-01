@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import "./navBar.css"
 
+
 const NavBar = () => {
     const [activeSection, setActiveSection] = useState("home");
 
     useEffect(() => {
         const handleScroll = () => {
-            const homeSection = document.getElementById("home");
             const knowsSection = document.getElementById("knows");
             const proyectsSection = document.getElementById("proyects");
             const contactSection = document.getElementById("contact");
             
             const scrollPosition = window.scrollY;
-
+            
             if (scrollPosition < knowsSection.offsetTop) {
                 setActiveSection("home");
             } else if (scrollPosition >= knowsSection.offsetTop && scrollPosition < proyectsSection.offsetTop) {
@@ -23,12 +23,13 @@ const NavBar = () => {
                 setActiveSection("contact");
             }
         };
-
+        
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
