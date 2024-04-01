@@ -5,6 +5,8 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  scrollbar-width: 5px;
+  scrollbar-color: #070707 transparent;
 } 
 
 
@@ -53,15 +55,9 @@ article{
 ::-webkit-scrollbar-track {
   background-color: #070707;
 }
- */
 
 
 /* Para Firefox */
-* {
-  scrollbar-width: 5px;
-  scrollbar-color: #070707 transparent;
-}
-
 ::selection {
   background: #070707;
   color: #fff;
