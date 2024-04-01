@@ -1,144 +1,111 @@
-#grillaContact{
-    margin-top: 20px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "contact1 contact1 contact1"
-    "contact2 contact3 contact4";
+#contact{
+    padding-top: 100px;
+	margin-bottom: 50px;
 }
 
-
-
-#contact1{
-    grid-area: contact1;
-    background-color: #2cb444;
+.description{
     text-align: center;
-}
-
-#contact2{
-    grid-area: contact2;
-    background-color: #424242;
-}
-
-#contact3{
-    grid-area: contact3;
-    background-color:  #0B66C3;
-}
-
-#contact4{
-    grid-area: contact4;
-    background-color: #EDEDED;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 
-
-
-.imgRRSS{
-    margin-left: 20px;
-    width: 100px;
-    height: 100px;
+#containerContact{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.stylesA{
-    margin: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
-    box-shadow: inset 0 0 0 0 rgb(25, 25, 25);
-    color: rgb(19, 19, 19);
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+.formStyle{
+    width: 100%;
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: #1f1f1f 2px 5px 10px;
+    border: 1px solid crimson;
 }
 
 
-.stylesA:hover{
-    color: rgb(184, 184, 184);
-    box-shadow: inset 200px 0 0 0 rgb(25, 25, 25);
+.formStyle label {
+	display: block;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.formStyle div{
+	width: 45%;
+}
+
+.formStyle input,textarea{
+    max-height: 200px;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 50px;
+	border: 2px solid #000;
+	color: #000;
+}
+.formStyle input:focus {
+	outline: none;
+	border: 2px solid crimson;
+}
+.formStyle textarea:focus {
+	outline: none;
+	border: 2px solid crimson;
 }
 
 
-
-
-
-
-@media screen and (max-width: 1000px) {
-    .imgRRSS{
-        margin-left: 20px;
-        width: 70px;
-        height: 70px;
-    }
-    
-    .stylesA{
-        font-size: 30px;
-    }
-    
+.buttonChange{
+	display: block;
+	background: crimson;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+    margin: auto;
+	width: 85%;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	transition: .3s ease all;
 }
 
 
-
-@media screen and (max-width: 800px) {
-    .imgRRSS{
-        margin-left: 20px;
-        width: 70px;
-        height: 70px;
-    }
-    
-    .stylesA{
-        font-size: 25px;
-    }
-    
+.nameAddress{
+    display: flex;
+    justify-content: space-between;
 }
 
 
+.buttonChange:hover {
+	background: rgb(124, 11, 33);
+}
 
-
-
-@media screen and (max-width: 700px) {
-    .imgRRSS{
-        margin-left: 20px;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .stylesA{
-        font-size: 25px;
-    }
-    
+.buttonChange:active {
+	scale: .9;
+    transition: all .4;
 }
 
 
-
-
-
-
-
-@media screen and (max-width: 641px) {
-    .imgRRSS{
-        margin-left: 20px;
-        width: 45px;
-        height: 45px;
-    }
-    
-    .stylesA{
-        font-size: 20px;
-    }
-    
+.pRRSS{
+	margin-top: 80px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
 }
 
+.containerFooterRRSS{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
 
-
-
-
-@media screen and (max-width: 564px) {
-    .imgRRSS{
-        margin-left: 20px;
-        width: 45px;
-        height: 45px;
-    }
-    
-    .stylesA{
-        font-size: 18px;
-    }
-    
+.containerFooterRRSS img:hover{
+	scale: 1.2;
+	transition: all .6s;
 }

@@ -14,7 +14,7 @@ import "./Knows.css"
 
 const Knows = () => {
     return (
-        <>
+        <div id='knows'>
             <h2 className='titlePresenting'>Skills</h2>
             
             <article className='container'>
@@ -68,7 +68,7 @@ const Knows = () => {
                         <img src={git} alt="Skill" />
                     </a>
             </article>
-        </>
+        </div>
     )
 }
 

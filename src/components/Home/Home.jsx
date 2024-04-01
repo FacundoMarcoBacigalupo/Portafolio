@@ -6,7 +6,7 @@ import "./Home.css"
 
 const Home = () => {
     return (
-        <main id='containerMain'>
+        <main id='home' className='containerMain'>
             <section>
                 <div className='animated-text'>
                     I'm a <span></span>

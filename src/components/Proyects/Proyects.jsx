@@ -12,14 +12,14 @@ import "./proyects.css"
 
 const Proyects2 = () => {
     return (
-        <>
+        <div id='proyects'>
             <h2 className='titlePresenting'>Proyectos</h2>
             
             <section className='containerProyects'>
                 <article id='c1' className="card">
                     <img className="card__thumb" src={MFL} alt='MFL' />
                     <div className="card__body">
-                        <h2 className="card__title">Sitio Web de una agencia de marketing digital</h2>
+                        <h2 className="card__title">Digital marketing agency website</h2>
                         <a href='https://agencia-mfl.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
@@ -29,7 +29,7 @@ const Proyects2 = () => {
                         <img src={NbStyle} alt='NbStyle' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">Simulación completa de un Ecommerce de zapatillas</h2>
+                        <h2 className="card__title">Complete simulation of a sneaker Ecommerce</h2>
                         <a href='https://ecommerce-nbstyle.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
@@ -39,7 +39,7 @@ const Proyects2 = () => {
                         <img src={ToDo} alt='ToDo' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">ToDo, lista de tareas mas un apartado para buscar y descargar imagenes</h2>
+                        <h2 className="card__title">ToDo, task list plus a section to search and download images</h2>
                         <a href='https://lista-de-tareas-todo.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
@@ -49,7 +49,7 @@ const Proyects2 = () => {
                         <img src={Landing} alt='Landing' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">Landing page simple de muestra sobre Ecommerce de zapatillas</h2>
+                        <h2 className="card__title">Simple sneaker ecommerce sample landing page</h2>
                         <a href='https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
@@ -59,7 +59,7 @@ const Proyects2 = () => {
                         <img src={Papelera} alt='Papelera' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">Sitio Web de un proveedor minorista de bolsas</h2>
+                        <h2 className="card__title">Website of a retail bag supplier</h2>
                         <a href='https://papelera-canuelas.netlify.app' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
@@ -69,7 +69,7 @@ const Proyects2 = () => {
                         <img src={Clima} alt='Clima' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">Sitio Web clima que te muestra como esta el clima en tu ciudad</h2>
+                        <h2 className="card__title">Weather website that shows you what the weather is like in your city</h2>
                         <a href='https://facundomarcobacigalupo.github.io/Sito-Web-Clima/' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
@@ -79,7 +79,7 @@ const Proyects2 = () => {
                         <img src={Marvel} alt='Marvel' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">API de Marvel que muestra los comics, series y personajes</h2>
+                        <h2 className="card__title">Marvel API showing comics, series and characters</h2>
                         <a href='https://info-marvel.netlify.app/' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
@@ -89,12 +89,12 @@ const Proyects2 = () => {
                         <img src={Blog} alt='Blog' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">Blog</h2>
+                        <h2 className="card__title">News blog</h2>
                         <a href='https://canuelas-te-escucha.netlify.app/' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
             </section>
-        </>
+        </div>
     )
 }
 

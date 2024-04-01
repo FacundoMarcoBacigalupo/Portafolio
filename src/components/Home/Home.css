@@ -1,7 +1,12 @@
-#containerMain{
+#home{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.containerMain{
     width: 80%;
-    margin: 100px auto;
-    margin-bottom: 150px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +87,6 @@
         width: calc(100% + 8px);
     }
 }
-
 
 
 

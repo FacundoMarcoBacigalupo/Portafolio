@@ -1,7 +1,13 @@
+#proyects{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+
 .containerProyects{
     text-align: center;
-    margin: auto;
     width: 80%;
+    margin: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -43,7 +49,7 @@
     margin-bottom: 40px;
     border: 1px solid rgba(255, 255, 255, 0.11);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.507);
     overflow: hidden;
     transition: box-shadow 0.5s;
 }

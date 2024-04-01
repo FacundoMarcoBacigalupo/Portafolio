@@ -5,7 +5,6 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 } 
 
 
@@ -25,10 +24,6 @@ body {
 }
 
 
-a{
-  text-decoration: none;
-}
-
 
 article{
   margin-top: 100px;
@@ -37,20 +32,47 @@ article{
 
 
 .titlePresenting{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-shadow: 0 0 5px #ffffff4f;
   font-size: 45px;
   padding: 0px;
   border-bottom: 1px solid rgb(224, 224, 224);
-  width: 10%;
+  width: 27%;
   margin-left: 100px;
-  margin-top: 0px;
+  margin-top: 80px;
   margin-bottom: 0px;
 }
 
 
+
+/* 
+/* Para WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 5px;
+  border: 10px solid #070707 transparent;
+  scrollbar-width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #070707;
+}
+ */
+
+
+/* Para Firefox */
+* {
+  scrollbar-width: 5px;
+  scrollbar-color: #070707 transparent;
+}
+
+::selection {
+  background: #070707;
+  color: #fff;
+}
+
+/* Firefox */
+::-moz-selection {
+  background: #070707;
+  color: #fff;
+}
 
 
 

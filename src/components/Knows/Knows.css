@@ -1,8 +1,12 @@
+#knows{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
 .container{
     width: 80%;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 250px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
