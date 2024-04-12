@@ -1,12 +1,11 @@
 import React from 'react'
 import MFL from '../../assets/img/MFL-Agencia-Marketing-Digital.png'
-import NbStyle from '../../assets/img/nbStyle.jpg'
-import Landing from '../../assets/img/landing.jpg'
-import ToDo from '../../assets/img/ToDo.jpg'
-import Papelera from '../../assets/img/Papelera.jpg'
-import Clima from '../../assets/img/clima.jpg'
-import Marvel from "../../assets/img/marvel.jpg"
-import Blog from "../../assets/img/blog.jpeg"
+import NbStyle from '../../assets/img/nbStyle.png'
+import Landing from '../../assets/img/landing.png'
+import ToDo from '../../assets/img/ToDo.png'
+import Papelera from '../../assets/img/Papelera.png'
+import Marvel from "../../assets/img/marvel.png"
+import Blog from "../../assets/img/blog.png"
 import "./proyects.css"
 
 
@@ -66,11 +65,11 @@ const Proyects2 = () => {
                 
                 <article id='c6' className="card">
                     <header className="card__thumb">
-                        <img src={Clima} alt='Clima' />
+                        <img src={Blog} alt='Blog' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">Weather website that shows you what the weather is like in your city</h2>
-                        <a href='https://facundomarcobacigalupo.github.io/Sito-Web-Clima/' target="_blank" rel="noreferrer" className="card__more">View more</a>
+                        <h2 className="card__title">News blog</h2>
+                        <a href='https://canuelas-te-escucha.netlify.app/' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
                 
@@ -81,16 +80,6 @@ const Proyects2 = () => {
                     <div className="card__body">
                         <h2 className="card__title">Marvel API showing comics, series and characters</h2>
                         <a href='https://info-marvel.netlify.app/' target="_blank" rel="noreferrer" className="card__more">View more</a>
-                    </div>
-                </article>
-                
-                <article id='c8' className="card">
-                    <header className="card__thumb">
-                        <img src={Blog} alt='Blog' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">News blog</h2>
-                        <a href='https://canuelas-te-escucha.netlify.app/' target="_blank" rel="noreferrer" className="card__more">View more</a>
                     </div>
                 </article>
             </section>
