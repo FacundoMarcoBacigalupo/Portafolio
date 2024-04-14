@@ -9,13 +9,17 @@ import sass from '../../assets/icons/sass-svgrepo-com.svg'
 import css from '../../assets/icons/css3-02-svgrepo-com.svg'
 import mongodb from '../../assets/icons/dbs-mongodb-svgrepo-com.svg'
 import nodejs from "../../assets/icons/node-js-svgrepo-com.svg"
+import { useTranslation } from 'react-i18next'
 import "./Knows.css"
 
 
 const Knows = () => {
+    const [t] = useTranslation(["global"]);
+
+
     return (
         <div id='knows'>
-            <h2 className='titlePresenting'>Skills</h2>
+            <h2 className='titlePresenting'>{t("knows.skills")}</h2>
             
             <article className='container'>
                     <a href="https://nodejs.org/en" target="_blank" rel="noreferrer" id='card1' className='cardSkills'>

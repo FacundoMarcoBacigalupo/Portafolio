@@ -1,10 +1,14 @@
 import React from 'react'
 import Button from "../Button/Button.jsx"
 import ButtonDownload from "../ButtonDownload/ButtonDownload.jsx"
+import { useTranslation } from 'react-i18next'
 import "./Home.css"
 
 
 const Home = () => {
+    const [t] = useTranslation(["global"]);
+
+
     return (
         <main id='home' className='containerMain'>
             <section>
@@ -12,7 +16,7 @@ const Home = () => {
                     I'm a <span></span>
                 </div>
                 
-                <p className='text'>I am excited about Programming, Digital Marketing and developing my skills in the field in which I specialize. I consider myself responsible, disciplined and enthusiastic. I enjoy working as a team and using these meetings to gain knowledge. I am passionate about books about personal development and the Marvel cinematic universe.</p>
+                <p className='text'>{t("home.text")}</p>
                 
                 <div className='containerButtons'>
                     <Button href={"https://wa.me/+5401127398858"}/>

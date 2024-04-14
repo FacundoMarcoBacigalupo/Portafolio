@@ -1,0 +1,35 @@
+{
+    "navbar":{
+        "span-home": "Home",
+        "span-knows": "Knows",
+        "span-proyects": "Proyects",
+        "span-contact": "Contact"
+    },
+    "home":{
+        "text": "I am excited about Programming, Digital Marketing and developing my skills in the field in which I specialize. I consider myself responsible, disciplined and enthusiastic. I enjoy working as a team and using these meetings to gain knowledge. I am passionate about books about personal development and the Marvel cinematic universe."
+    },
+    "knows":{
+        "skills": "Skills"
+    },
+    "proyects":{
+        "title": "Proyects",
+        "mfl": "Digital marketing agency website",
+        "nbstyle": "Complete simulation of a sneaker Ecommerce",
+        "todo": "ToDo, task list plus a section to search and download images",
+        "landing": "Simple sneaker ecommerce sample landing page",
+        "papelera": "Website of a retail bag supplier",
+        "blog": "News blog",
+        "marvel": "Marvel API showing comics, series and characters",
+        "button": "View more"
+    },
+    "contact":{
+        "sendmsj": "Send me a message",
+        "description": "Write me to say good morning, ask for my resume, or see if we can do something awesome together? I'm glad to meet you!",
+        "name": "Your Name",
+        "email": "Email Address",
+        "yourmsj": "Your Message",
+        "yourmsjplaceholder": "Hello, we need a web developer for a Website for X Company/Pyme.",
+        "button": "Send Message",
+        "rrss": "My social media"
+    }
+}

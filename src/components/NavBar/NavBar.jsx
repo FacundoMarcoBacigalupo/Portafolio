@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import "./navBar.css"
 
 
 const NavBar = () => {
+    const [t] = useTranslation(["global"]);
+
     const [activeSection, setActiveSection] = useState("home");
 
     useEffect(() => {
@@ -44,10 +47,10 @@ const NavBar = () => {
     return (
         <div className='containerNav'>
             <nav>
-                <span id='n1' className={activeSection === "home" ? "active" : ""} onClick={() => scrollToSection("home")}>Home</span>
-                <span id='n2' className={activeSection === "knows" ? "active" : ""} onClick={() => scrollToSection("knows")}>Knows</span>
-                <span id='n3' className={activeSection === "proyects" ? "active" : ""} onClick={() => scrollToSection("proyects")}>Proyects</span>
-                <span id='n4' className={activeSection === "contact" ? "active" : ""} onClick={() => scrollToSection("contact")}>Contact</span>
+                <span id='n1' className={activeSection === "home" ? "active" : ""} onClick={() => scrollToSection("home")}>{t("navbar.span-home")}</span>
+                <span id='n2' className={activeSection === "knows" ? "active" : ""} onClick={() => scrollToSection("knows")}>{t("navbar.span-knows")}</span>
+                <span id='n3' className={activeSection === "proyects" ? "active" : ""} onClick={() => scrollToSection("proyects")}>{t("navbar.span-proyects")}</span>
+                <span id='n4' className={activeSection === "contact" ? "active" : ""} onClick={() => scrollToSection("contact")}>{t("navbar.span-contact")}</span>
             </nav>
         </div>
     )

@@ -2,11 +2,15 @@ import React, { useState, useRef } from 'react'
 import GitHub from "../../assets/icons/icons8-github.svg"
 import Linkedin from "../../assets/icons/icons8-linkedin.svg"
 import emailjs from "@emailjs/browser"
+import { useTranslation } from 'react-i18next'
 import "./Contact.css"
 
 
 
 const Contact = () => {
+    const [t] = useTranslation(["global"]);
+
+
     const [fields, setFields] = useState({name:"", email:"", message:""})
     const [validations, setValidations] = useState({name:false, email:false, message:false});
 
@@ -47,33 +51,33 @@ const Contact = () => {
 
     return (
         <div id='contact'>
-            <h2 className='titlePresenting'>Send me a message</h2>
+            <h2 className='titlePresenting'>{t("contact.sendmsj")}</h2>
             <div id='containerCon'>
-                <p className='description'>Write me to say good morning, ask for my resume, or see if we can do something awesome together? I'm glad to meet you!</p>
+                <p className='description'>{t("contact.description")}</p>
                 
                 <section id='containerContact'>
                     <form ref={refForm} onSubmit={handleSubmit} className='formStyle'>
                         <section className='nameAddress'>
                             <div>
-                                <label>Your Name</label>
+                                <label>{t("contact.name")}</label>
                                 <input type="text" placeholder='Name' name="name" id="name" value={fields.name} onChange={handleInputChange} required />
                             </div>
                             
                             <div>
-                                <label>Email Address</label>
+                                <label>{t("contact.email")}</label>
                                 <input type="email" placeholder='Email' name="email" id="email" value={fields.email} onChange={handleInputChange} required />
                             </div>
                         </section>
                         
-                        <label>Your Message</label>
-                        <textarea placeholder="Hello, we need a web developer for a Website for X Company/Pyme." name="message" id="message" value={fields.message} onChange={handleInputChange} required></textarea>
+                        <label>{t("contact.yourmsj")}</label>
+                        <textarea placeholder={`${t("contact.yourmsjplaceholder")}`} name="message" id="message" value={fields.message} onChange={handleInputChange} required></textarea>
                         
-                        <button type='submit' className='buttonChange'>Send Message</button>
+                        <button type='submit' className='buttonChange'>{t("contact.button")}</button>
                     </form>
                 </section>
             </div>
             
-            <p className='pRRSS'>My social media</p>
+            <p className='pRRSS'>{t("contact.rrss")}</p>
             <div className='containerFooterRRSS'>
                 <a href="https://github.com/FacundoMarcoBacigalupo" target="_blank" rel="noreferrer">
                     <img src={GitHub} alt="GitHub" />
