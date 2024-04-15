@@ -7,10 +7,19 @@ const ChangeLanguage = () => {
 
 
     return (
-        <>
-            <button onClick={() => i18n.changeLanguage("es")}>ES</button>
-            <button onClick={() => i18n.changeLanguage("en")}>EN</button>
-        </>
+        <div className='up'>
+            <div>
+                <span className='styleButtonUp'>
+                    <span id="styleAup"  onClick={() => i18n.changeLanguage("es")}></span>
+                </span>
+            </div>
+            
+            <div>
+                <span className='styleButtonUp'>
+                    <span id="styleBup" onClick={() => i18n.changeLanguage("en")}></span>
+                </span>
+            </div>
+        </div>
     )
 }
 

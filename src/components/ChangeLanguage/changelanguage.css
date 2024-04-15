@@ -1,0 +1,98 @@
+.up{
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+}
+
+
+
+
+.styleButtonUp{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 55px;
+    cursor: pointer;
+}
+
+
+.styleButtonUp #styleAup{
+    font-size: 15px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .5s;
+}
+
+#styleBup{
+    font-size: 15px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .5s;
+    margin-top: 15px;
+}
+
+
+.styleButtonUp #styleAup:before, .styleButtonUp #styleAup:after{
+    position: absolute;
+    content: "ES";
+    height: 55px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#styleBup:before, #styleBup:after{
+    position: absolute;
+    content: "EN";
+    height: 55px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+.styleButtonUp #styleAup:before{
+    color: rgb(184, 184, 184);
+    background-color: rgb(19, 19, 19);
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+#styleBup:before{
+    color: rgb(184, 184, 184);
+    background-color: rgb(19, 19, 19);
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+
+.styleButtonUp #styleAup:after{
+    color: rgb(19, 19, 19);
+    background-color: rgb(184, 184, 184);
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+#styleBup:after{
+    color: rgb(19, 19, 19);
+    background-color: rgb(184, 184, 184);
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+
+.styleButtonUp #styleAup:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+#styleBup:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+.styleButtonUp:active{
+    scale: .9;
+    transition: all .4s
+}
