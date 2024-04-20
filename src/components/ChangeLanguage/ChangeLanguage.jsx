@@ -1,10 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import "./changelanguage.css"
 
-
 const ChangeLanguage = () => {
     const [, i18n] = useTranslation()
-
 
     return (
         <div className='up'>
@@ -13,7 +11,6 @@ const ChangeLanguage = () => {
                     <span id="styleAup"  onClick={() => i18n.changeLanguage("es")}></span>
                 </span>
             </div>
-            
             <div>
                 <span className='styleButtonUp'>
                     <span id="styleBup" onClick={() => i18n.changeLanguage("en")}></span>
@@ -22,6 +19,5 @@ const ChangeLanguage = () => {
         </div>
     )
 }
-
 
 export default ChangeLanguage
