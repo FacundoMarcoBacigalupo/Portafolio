@@ -1,13 +1,11 @@
+import { useTranslation } from 'react-i18next'
 import React from 'react'
 import Button from "../Button/Button.jsx"
 import ButtonDownload from "../ButtonDownload/ButtonDownload.jsx"
-import { useTranslation } from 'react-i18next'
 import "./Home.css"
-
 
 const Home = () => {
     const [t] = useTranslation(["global"]);
-
 
     return (
         <main id='home' className='containerMain'>
@@ -26,6 +24,5 @@ const Home = () => {
         </main>
     )
 }
-
 
 export default Home

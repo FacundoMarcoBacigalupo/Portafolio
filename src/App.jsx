@@ -6,7 +6,6 @@ import Contact from "./components/Contact/Contact.jsx"
 import NavBar from "./components/NavBar/NavBar.jsx";
 import ChangeLanguage from "./components/ChangeLanguage/ChangeLanguage.jsx";
 
-
 function App() {
   return (
     <Fragment>
@@ -19,6 +18,5 @@ function App() {
     </Fragment>
   );
 }
-
 
 export default App;

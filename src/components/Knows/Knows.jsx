@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import React from 'react'
 import bootstrap from '../../assets/icons/icons8-boostrap.svg'
 import git from '../../assets/icons/icons8-git.svg'
@@ -9,13 +10,11 @@ import sass from '../../assets/icons/sass-svgrepo-com.svg'
 import css from '../../assets/icons/css3-02-svgrepo-com.svg'
 import mongodb from '../../assets/icons/dbs-mongodb-svgrepo-com.svg'
 import nodejs from "../../assets/icons/node-js-svgrepo-com.svg"
-import { useTranslation } from 'react-i18next'
+import java from "../../assets/icons/java.png"
 import "./Knows.css"
-
 
 const Knows = () => {
     const [t] = useTranslation(["global"]);
-
 
     return (
         <div id='knows'>
@@ -71,10 +70,14 @@ const Knows = () => {
                         <p>Git</p>
                         <img src={git} alt="Skill" />
                     </a>
+                    
+                    <a href="https://dev.java" target="_blank" rel="noreferrer" id='card11' className='cardSkills'>
+                        <p>Java</p>
+                        <img src={java} alt="Skill" />
+                    </a>
             </article>
         </div>
     )
 }
-
 
 export default Knows

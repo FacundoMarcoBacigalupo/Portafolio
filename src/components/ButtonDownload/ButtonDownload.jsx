@@ -3,7 +3,6 @@ import { saveAs } from "file-saver";
 import CVFile from '../../assets/files/CV - Facundo Marco Bacigalupo.pdf';
 import "./buttonDownload.css"
 
-
 const ButtonDownload = () =>{
   const dowload = () =>{
       fetch(CVFile)
@@ -13,7 +12,6 @@ const ButtonDownload = () =>{
       })
   }
 
-
   return (
     <div onClick={() => dowload()}>
       <span id='styleButton2'>
@@ -22,6 +20,5 @@ const ButtonDownload = () =>{
     </div>
   )
 }
-
 
 export default ButtonDownload

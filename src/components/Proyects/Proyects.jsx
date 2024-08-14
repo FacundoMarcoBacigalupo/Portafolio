@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import React from 'react'
 import MFL from '../../assets/img/MFL-Agencia-Marketing-Digital.png'
 import NbStyle from '../../assets/img/nbStyle.png'
@@ -6,13 +7,10 @@ import ToDo from '../../assets/img/ToDo.png'
 import Papelera from '../../assets/img/Papelera.png'
 import Marvel from "../../assets/img/marvel.png"
 import Blog from "../../assets/img/blog.png"
-import { useTranslation } from 'react-i18next'
 import "./proyects.css"
-
 
 const Proyects2 = () => {
     const [t] = useTranslation(["global"]);
-
 
     return (
         <div id='proyects'>
@@ -90,6 +88,5 @@ const Proyects2 = () => {
         </div>
     )
 }
-
 
 export default Proyects2
