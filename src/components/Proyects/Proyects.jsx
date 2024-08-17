@@ -2,11 +2,10 @@ import { useTranslation } from 'react-i18next'
 import React from 'react'
 import MFL from '../../assets/img/MFL-Agencia-Marketing-Digital.png'
 import NbStyle from '../../assets/img/nbStyle.png'
-import Landing from '../../assets/img/landing.png'
 import ToDo from '../../assets/img/ToDo.png'
 import Papelera from '../../assets/img/Papelera.png'
-import Marvel from "../../assets/img/marvel.png"
-import Blog from "../../assets/img/blog.png"
+import Blog from "../../assets/img/blog.jpg"
+import hackathon from "../../assets/img/hackathon.jpg"
 import "./proyects.css"
 
 const Proyects2 = () => {
@@ -45,13 +44,13 @@ const Proyects2 = () => {
                     </div>
                 </article>
                 
-                <article id='c4' className="card">
+                <article id='c4' className="card" style={{border:"2px solid crimson"}}>
                     <header className="card__thumb">
-                        <img src={Landing} alt='Landing' />
+                        <img src={hackathon} alt='hackathon' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">{t("proyects.landing")}</h2>
-                        <a href='https://facundomarcobacigalupo.github.io/Landing-page-ecommerce/' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
+                        <h2 className="card__title">{t("proyects.hackathon")}</h2>
+                        <a href='https://hackaton-no-country.vercel.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
                 </article>
                 
@@ -71,11 +70,11 @@ const Proyects2 = () => {
                     </header>
                     <div className="card__body">
                         <h2 className="card__title">{t("proyects.blog")}</h2>
-                        <a href='https://canuelas-te-escucha.netlify.app/' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
+                        <a href='https://it-noticias.netlify.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
                 </article>
                 
-                <article id='c7' className="card">
+                {/* <article id='c7' className="card">
                     <header className="card__thumb">
                         <img src={Marvel} alt='Marvel' />
                     </header>
@@ -83,7 +82,7 @@ const Proyects2 = () => {
                         <h2 className="card__title">{t("proyects.marvel")}</h2>
                         <a href='https://info-marvel.netlify.app/' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
-                </article>
+                </article> */}
             </section>
         </div>
     )

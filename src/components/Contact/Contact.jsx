@@ -1,11 +1,9 @@
 import React, { useState, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import GitHub from "../../assets/icons/icons8-github.svg"
 import Linkedin from "../../assets/icons/icons8-linkedin.svg"
 import emailjs from "@emailjs/browser"
-import { useTranslation } from 'react-i18next'
 import "./Contact.css"
-
-
 
 const Contact = () => {
     const [t] = useTranslation(["global"]);
@@ -89,6 +87,5 @@ const Contact = () => {
         </div>
     )
 }
-
 
 export default Contact

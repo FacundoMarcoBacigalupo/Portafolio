@@ -40,20 +40,23 @@
 	font-size: 20px;
 }
 
-.formStyle div{
-	width: 45%;
+.formStyle div {
+    width: 45%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.formStyle input,textarea{
-    max-height: 200px;
-	width: 100%;
-	border-radius: 5px;
-	font-size: 20px;
-	padding: 10px;
-	margin-bottom: 50px;
-	border: 2px solid #000;
-	color: #000;
-	background-color: rgb(214, 214, 214);
+.formStyle input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: rgb(214, 214, 214);
 }
 .formStyle input:focus {
 	outline: none;
@@ -64,6 +67,13 @@
 	outline: none;
 	border: 2px solid crimson;
 	transition: all .3s;
+}
+
+.nameAddress {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 
@@ -82,11 +92,6 @@
 	transition: .3s ease all;
 }
 
-
-.nameAddress{
-    display: flex;
-    justify-content: space-between;
-}
 
 
 .buttonChange:hover {
@@ -130,6 +135,10 @@
     .description{
         font-size: 20px;
     }
+
+	.nameAddress label{
+        font-size: 16px !important;
+	}
 }
 
 
@@ -137,4 +146,8 @@
     .description{
         font-size: 18px;
     }
+
+	.nameAddress label{
+        font-size: 16px !important;
+	}
 }
