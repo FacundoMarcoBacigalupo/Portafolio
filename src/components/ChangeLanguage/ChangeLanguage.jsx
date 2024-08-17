@@ -3,7 +3,6 @@ import "./changelanguage.css"
 
 const ChangeLanguage = () => {
     const [, i18n] = useTranslation()
-
     return (
         <div className='up'>
             <div>
