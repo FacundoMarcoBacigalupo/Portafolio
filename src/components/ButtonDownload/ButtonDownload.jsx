@@ -1,6 +1,6 @@
 import React from 'react'
 import { saveAs } from "file-saver";
-import CVFile from '../../assets/files/CV - Facundo Marco Bacigalupo.pdf';
+import CVFile from '../../assets/files/Facundo_Marco_Bacigalupo_CV.pdf';
 import "./buttonDownload.css"
 
 const ButtonDownload = () =>{
@@ -8,7 +8,7 @@ const ButtonDownload = () =>{
       fetch(CVFile)
       .then((response) => response.blob())
       .then(blob =>{
-        saveAs(blob, 'CV - Facundo Marco Bacigalupo.pdf');
+        saveAs(blob, 'Facundo_Marco_Bacigalupo_CV.pdf');
       })
   }
 
