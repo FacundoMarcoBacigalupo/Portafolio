@@ -44,7 +44,7 @@ const Proyects2 = () => {
                     </div>
                 </article>
                 
-                <article id='c4' className="card" style={{border:"2px solid crimson"}}>
+                <article id='c4' className="card">
                     <header className="card__thumb">
                         <img src={hackathon} alt='hackathon' />
                     </header>

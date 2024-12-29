@@ -11,6 +11,8 @@ import css from '../../assets/icons/css3-02-svgrepo-com.svg'
 import mongodb from '../../assets/icons/dbs-mongodb-svgrepo-com.svg'
 import nodejs from "../../assets/icons/node-js-svgrepo-com.svg"
 import java from "../../assets/icons/java.png"
+import Cshart from "../../assets/icons/iconCsharp.png"
+import MySQL from "../../assets/icons/mysql.png"
 import "./Knows.css"
 
 const Knows = () => {
@@ -74,6 +76,16 @@ const Knows = () => {
                     <a href="https://dev.java" target="_blank" rel="noreferrer" id='card11' className='cardSkills'>
                         <p>Java</p>
                         <img src={java} alt="Skill" />
+                    </a>
+                    
+                    <a href="https://dotnet.microsoft.com/es-es/languages/csharp" target="_blank" rel="noreferrer" id='card12' className='cardSkills'>
+                        <p>C#</p>
+                        <img src={Cshart} alt="Skill" />
+                    </a>
+                                        
+                    <a href="https://www.mysql.com" target="_blank" rel="noreferrer" id='card13' className='cardSkills'>
+                        <p>MySQL</p>
+                        <img src={MySQL} alt="Skill" />
                     </a>
             </article>
         </div>

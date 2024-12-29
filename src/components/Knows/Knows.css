@@ -13,7 +13,8 @@
     grid-template-areas:
         "card1 card2 card3 card4"
         "card5 card6 card7 card8"
-        "card9 card9 card10 card11";
+        "card9 card10 card11 card12"
+        "card13 card14 card14 card14";
     grid-gap: 20px;
 }
 
@@ -49,6 +50,12 @@
 }
 #card11{
     grid-area: card11;
+}
+#card12{
+    grid-area: card12;
+}
+#card13{
+    grid-area: card13;
 }
 
 
@@ -96,7 +103,8 @@
             "card1 card2 card3"
             "card4 card5 card6"
             "card7 card8 card9"
-            "card10 card10 card11";
+            "card10 card11 card12"
+            "card13 card14 card14";
     }
 }
 
@@ -112,7 +120,8 @@
             "card5 card6"
             "card7 card8"
             "card9 card10"
-            "card11 card11";
+            "card11 card12"
+            "card13 card14";
     }
 }
 
@@ -133,6 +142,8 @@
             "card8"
             "card9"
             "card10"
-            "card11";
+            "card11"
+            "card12"
+            "card13";
     }
 }

@@ -75,15 +75,17 @@ const Contact = () => {
                 </section>
             </div>
             
-            <p className='pRRSS'>{t("contact.rrss")}</p>
-            <div className='containerFooterRRSS'>
-                <a href="https://github.com/FacundoMarcoBacigalupo" target="_blank" rel="noreferrer">
-                    <img src={GitHub} alt="GitHub" />
-                </a>
-                <a href="https://www.linkedin.com/in/facundomarcobacigalupo/" target="_blank" rel="noreferrer">
-                    <img src={Linkedin} alt="LinkedIn " />
-                </a>
-            </div>
+            <section className='containerPadreFooterRRSS'>
+                <p>{t("contact.rrss")}</p>
+                <div className='containerFooterRRSS'>
+                    <a href="https://github.com/FacundoMarcoBacigalupo" target="_blank" rel="noreferrer">
+                        <img src={GitHub} alt="GitHub" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/facundomarcobacigalupo/" target="_blank" rel="noreferrer">
+                        <img src={Linkedin} alt="LinkedIn " />
+                    </a>
+                </div>
+            </section>
         </div>
     )
 }

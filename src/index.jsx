@@ -4,10 +4,9 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import i18next from 'i18next';
-import './index.css';
-
 import global_es from "./translation/es/global.json"
 import global_en from "./translation/en/global.json"
+import './index.css';
 
 i18next.init({
   interpolation: { escapeValue: false },

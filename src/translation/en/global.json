@@ -2,7 +2,7 @@
     "navbar":{
         "span-home": "Home",
         "span-knows": "Knows",
-        "span-proyects": "Proyects",
+        "span-proyects": "Projects",
         "span-contact": "Contact"
     },
     "home":{
@@ -12,7 +12,7 @@
         "skills": "Skills"
     },
     "proyects":{
-        "title": "Proyects",
+        "title": "Projects",
         "mfl": "Digital marketing agency website",
         "nbstyle": "Complete simulation of a sneaker Ecommerce",
         "todo": "ToDo, task list plus a section to search and download images",
