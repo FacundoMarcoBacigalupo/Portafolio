@@ -63,7 +63,7 @@ const Contact = () => {
                             
                             <div>
                                 <label>{t("contact.email")}</label>
-                                <input type="email" placeholder='Email' name="email" id="email" value={fields.email} onChange={handleInputChange} required />
+                                <input type="email" placeholder={t("contact.email")} name="email" id="email" value={fields.email} onChange={handleInputChange} required />
                             </div>
                         </section>
                         
