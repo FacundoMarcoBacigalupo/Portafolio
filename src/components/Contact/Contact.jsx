@@ -58,12 +58,12 @@ const Contact = () => {
                         <section className='nameAddress'>
                             <div>
                                 <label>{t("contact.name")}</label>
-                                <input type="text" placeholder='Name' name="name" id="name" value={fields.name} onChange={handleInputChange} required />
+                                <input type="text" placeholder={t("contact.name")} name="name" id="name" value={fields.name} onChange={handleInputChange} required />
                             </div>
                             
                             <div>
                                 <label>{t("contact.email")}</label>
-                                <input type="email" placeholder='Email' name="email" id="email" value={fields.email} onChange={handleInputChange} required />
+                                <input type="email" placeholder={t("contact.email")} name="email" id="email" value={fields.email} onChange={handleInputChange} required />
                             </div>
                         </section>
                         
