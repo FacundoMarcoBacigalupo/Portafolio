@@ -16,11 +16,14 @@ const NavBar = () => {
             
             if (scrollPosition < knowsSection.offsetTop) {
                 setActiveSection("home");
-            } else if (scrollPosition >= knowsSection.offsetTop && scrollPosition < proyectsSection.offsetTop) {
+            }
+            else if (scrollPosition >= knowsSection.offsetTop && scrollPosition < proyectsSection.offsetTop) {
                 setActiveSection("knows");
-            } else if (scrollPosition >= proyectsSection.offsetTop && scrollPosition < contactSection.offsetTop) {
+            }
+            else if (scrollPosition >= proyectsSection.offsetTop && scrollPosition < contactSection.offsetTop) {
                 setActiveSection("proyects");
-            } else {
+            }
+            else {
                 setActiveSection("contact");
             }
         };
