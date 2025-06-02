@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import GitHub from "../../assets/icons/icons8-github.svg"
 import Linkedin from "../../assets/icons/icons8-linkedin.svg"

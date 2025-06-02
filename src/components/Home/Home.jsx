@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import React from 'react'
 import Button from "../Button/Button.jsx"
 import ButtonDownload from "../ButtonDownload/ButtonDownload.jsx"
 import "./Home.css"

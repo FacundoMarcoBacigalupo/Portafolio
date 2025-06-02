@@ -8,13 +8,13 @@
     margin: auto;
     margin-top: 20px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "card1 card2 card3 card4"
         "card5 card6 card7 card8"
         "card9 card10 card11 card12"
-        "card13 card14 card14 card14";
+        "card13 card13 card14 card14";
     grid-gap: 20px;
 }
 
@@ -57,13 +57,15 @@
 #card13{
     grid-area: card13;
 }
-
+#card14{
+    grid-area: card14;
+}
 
 .cardSkills{
     text-decoration: none;
     color: rgb(214, 214, 214);
     border: 1px solid rgba(224, 224, 224, 0.521);
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 .cardSkills:hover{
@@ -97,7 +99,7 @@
 @media screen and (max-width: 930px) {
     .container{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             "card1 card2 card3"
@@ -112,7 +114,7 @@
 @media screen and (max-width: 750px) {
     .container{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "card1 card2"
@@ -123,13 +125,18 @@
             "card11 card12"
             "card13 card14";
     }
+
+    .cardSkills img{
+    height: 80px;
+    width: 80px;
+}
 }
 
 
 @media screen and (max-width: 500px) {
     .container{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
             "card1"
@@ -144,6 +151,7 @@
             "card10"
             "card11"
             "card12"
-            "card13";
+            "card13"
+            "card14";
     }
 }

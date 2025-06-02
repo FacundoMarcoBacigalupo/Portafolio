@@ -16,8 +16,8 @@
 .animated-text{
     text-align: center;
     font-size: 34px;
-    font-weight: 700;
-    min-width: 280px;
+    font-weight: 900;
+    min-width: 300px;
     margin-bottom: 50px;
 }
 
@@ -69,13 +69,13 @@
 
 @keyframes words {
     0%,40%{
-        content: "Front-end Developer";
+        content: "Software Developer";
     }
     41%,80%{
-        content: "Back-end Developer";
+        content: "Fullstack Developer";
     }
     81%,100%{
-        content: "Community Manager";
+        content: "Mobile Developer";
     }
 }
 
