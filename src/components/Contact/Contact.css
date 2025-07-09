@@ -105,12 +105,11 @@
 
 
 .containerPadreFooterRRSS{
-	margin-top: 100px;
+	margin-top: 80px;
 }
 .containerPadreFooterRRSS p{
+	text-shadow: 0 0 5px #ffffff4f;
 	text-align: center;
-	font-size: 30px;
-	font-weight: 700;
 }
 
 .containerFooterRRSS{
@@ -119,14 +118,18 @@
 	justify-content: space-evenly;
 }
 .containerFooterRRSS img{
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 }
 .containerFooterRRSS img:hover{
 	scale: 1.2;
 	transition: all .6s;
 }
 
+.yourMessage textarea{
+	min-height: 20vh;
+	max-height: 50vh;
+}
 
 
 
@@ -134,15 +137,46 @@
 
 
 
+@media screen and (max-width: 970px) {
+	.containerPadreFooterRRSS p{
+		font-size: 30px;
+	}
+}
 
-
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 900px) {
     .description{
         font-size: 20px;
     }
 
 	.nameAddress label{
-        font-size: 16px !important;
+        font-size: 17px;
+	}
+	.nameAddress input{
+        font-size: 17px;
+	}
+	.yourMessage label{
+        font-size: 17px;
+	}
+	.yourMessage textarea{
+        font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.nameAddress {
+		flex-direction: column;
+	}
+	.nameAddress div{
+		margin-bottom: -10px;
+	}
+    .formStyle div {
+        width: 100%;
+    }
+	.yourMessage{
+		margin-top: 15px;
+	}
+	.containerPadreFooterRRSS p{
+		font-size: 28px;
 	}
 }
 
@@ -153,6 +187,18 @@
     }
 
 	.nameAddress label{
-        font-size: 16px !important;
+        font-size: 15px;
+	}
+	.nameAddress input{
+        font-size: 15px;
+	}
+
+	.containerFooterRRSS img{
+		width: 50px;
+		height: 50px;
+	}
+
+	.containerPadreFooterRRSS p{
+		font-size: 24px;
 	}
 }

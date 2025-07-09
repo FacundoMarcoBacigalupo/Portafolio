@@ -66,11 +66,12 @@ const Contact = () => {
                                 <input type="email" placeholder={t("contact.email")} name="email" id="email" value={fields.email} onChange={handleInputChange} required />
                             </div>
                         </section>
-                        
-                        <label>{t("contact.yourmsj")}</label>
-                        <textarea placeholder={`${t("contact.yourmsjplaceholder")}`} name="message" id="message" value={fields.message} onChange={handleInputChange} required></textarea>
-                        
-                        <button type='submit' className='buttonChange'>{t("contact.button")}</button>
+                        <section className='yourMessage'>
+                            <label>{t("contact.yourmsj")}</label>
+                            <textarea placeholder={`${t("contact.yourmsjplaceholder")}`} name="message" id="message" value={fields.message} onChange={handleInputChange} required></textarea>
+                            
+                            <button type='submit' className='buttonChange'>{t("contact.button")}</button>
+                        </section>
                     </form>
                 </section>
             </div>

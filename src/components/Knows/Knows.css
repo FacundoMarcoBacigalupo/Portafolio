@@ -76,16 +76,14 @@
     border: 1px solid crimson;
 
 }
-
 .cardSkills p{
     text-align: center;
     font-size: 30px;
     font-weight: 700;
 }
-
 .cardSkills img{
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     object-fit: cover;
     object-position: center;
 }
@@ -126,12 +124,18 @@
             "card13 card14";
     }
 
+    .cardSkills p{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+    }
     .cardSkills img{
-    height: 80px;
-    width: 80px;
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
-}
-
 
 @media screen and (max-width: 500px) {
     .container{
@@ -153,5 +157,17 @@
             "card12"
             "card13"
             "card14";
+    }
+
+        .cardSkills p{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .cardSkills img{
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        object-position: center;
     }
 }
