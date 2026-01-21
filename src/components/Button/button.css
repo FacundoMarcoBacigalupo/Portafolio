@@ -18,7 +18,7 @@
 
 #styleButton #styleA:before, #styleButton #styleA:after{
     position: absolute;
-    content: "Contact me";
+    content: attr(data-text);
     height: 55px;
     width: 180px;
     display: flex;

@@ -23,108 +23,104 @@
 }
 
 nav {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: hsla(240, 10%, 4%, 0.74);
-    backdrop-filter: blur(5px);
+    padding: 8px 12px;
+    border-radius: 12px;
+    background-color: rgba(10, 10, 12, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    transition: max-height 0.3s ease-out;
+    gap: 5px;
+    transition: all 0.3s ease;
 }
 
 nav span {
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    letter-spacing: 1.2px;
     position: relative;
     display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 nav span:hover {
     cursor: pointer;
-}
-
-nav span:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background: #161616;
-    top: 40%;
-    animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-}
-
-nav span:hover:before {
-    animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .active {
-    color: crimson;
+    color: crimson !important;
+    background: rgba(220, 20, 60, 0.1) !important;
     font-weight: 600;
-    transition: all 0.6s;
 }
 
-@keyframes in {
-    0% {
-        width: 0;
-        left: 0;
-        right: auto;
-    }
-    100% {
-        left: 0;
-        right: auto;
-        width: 100%;
-    }
-}
-
-@keyframes out {
-    0% {
-        width: 100%;
-        left: auto;
-        right: 0;
-    }
-    100% {
-        width: 0;
-        left: auto;
-        right: 0;
-    }
-}
-
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 710px) {
     .menuButton {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+    }
+
+    .menuButton:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
 
     nav {
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: hsla(240, 10%, 4%, 0.74);
-        border-radius: 0;
+        top: 75px;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        background-color: rgba(10, 10, 12, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
         overflow: hidden;
         max-height: 0;
-        padding: 0px
+        padding: 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
     }
 
     .containerNav {
-        justify-content: left;
+        justify-content: flex-start;
+        padding: 0 20px;
     }
     
     nav.open {
-        max-height: 300px;
+        max-height: 400px;
+        padding: 15px 10px;
     }
 
     nav span {
-        font-size: 12px;
-        padding: 10px 0;
+        font-size: 14px;
+        padding: 12px 0;
         text-align: center;
         width: 100%;
+        border: none;
+        letter-spacing: 2px;
+    }
+
+    nav span:last-child {
+        border-bottom: none;
+    }
+
+    .active {
+        color: crimson !important;
+        background: rgba(220, 20, 60, 0.1) !important;
     }
 }

@@ -3,7 +3,7 @@ import { saveAs } from "file-saver";
 import CVFile from '../../assets/files/Facundo_Marco_Bacigalupo_CV.pdf';
 import "./buttonDownload.css"
 
-const ButtonDownload = () =>{
+const ButtonDownload = ({label}) =>{
   const dowload = () =>{
       fetch(CVFile)
       .then((response) => response.blob())
@@ -15,7 +15,7 @@ const ButtonDownload = () =>{
   return (
     <div onClick={() => dowload()}>
       <span id='styleButton2'>
-        <span id="styleB"> </span>
+        <span id="styleB" data-text={label}> </span>
       </span>
     </div>
   )

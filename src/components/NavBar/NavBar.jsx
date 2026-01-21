@@ -48,7 +48,7 @@ const NavBar = () => {
     return (
         <div className='containerNav'>
             <button className="menuButton" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                &#9776;
+                {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>}
             </button>
             <nav className={isMenuOpen ? "open" : ""}>
                 <span id='n1' className={activeSection === "home" ? "active" : ""} onClick={() => scrollToSection("home")}>{t("navbar.span-home")}</span>

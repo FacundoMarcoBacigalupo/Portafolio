@@ -6,7 +6,9 @@
         "span-contact": "Contacto"
     },
     "home":{
-        "text": "Me entusiasma el Desarrollo de Software 🖥️ y desarrollar mis habilidades en el ámbito en el que me especializo. Me considero responsable 📋, disciplinado ⏰, y entusiasta 😃. Disfruto trabajar en equipo 👥 y utilizar esos encuentros para nutrirme de conocimientos 🧠. Me apasionan los libros sobre desarrollo personal 📚🧘‍♂️ y el universo cinematográfico de Marvel 🦸‍♂️🎬.  ¡Estoy listo para enfrentar nuevos desafíos! 💪"
+        "text": "Me entusiasma el Desarrollo de Software 🖥️ y desarrollar mis habilidades en el ámbito en el que me especializo. Me considero responsable 📋, disciplinado ⏰, y entusiasta 😃. Disfruto trabajar en equipo 👥 y utilizar esos encuentros para nutrirme de conocimientos 🧠. Me apasionan los libros sobre desarrollo personal 📚🧘‍♂️ y el universo cinematográfico de Marvel 🦸‍♂️🎬.  ¡Estoy listo para enfrentar nuevos desafíos! 💪",
+        "contact": "Contáctame",
+        "download": "Descargar CV"
     },
     "knows":{
         "skills": "Habilidades"
@@ -17,7 +19,7 @@
         "nbstyle": "Simulación completa de una Ecommerce de zapatilla",
         "todo": "ToDo, lista de tareas más una sección para buscar y descargar imágenes",
         "papelera": "Sitio web de un proveedor minorista de bolsas",
-        "hackathon": "Hackaton de No Country sobre Justina.io",
+        "mythf": "Mi Agencia de Software y Marketing Digital",
         "blog": "Blog sobre noticias generales del mundo IT",
         "button": "Ver más"
     },

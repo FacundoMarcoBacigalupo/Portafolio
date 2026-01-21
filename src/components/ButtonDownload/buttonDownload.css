@@ -18,7 +18,7 @@
 
 #styleButton2 #styleB:before, #styleButton2 #styleB:after{
     position: absolute;
-    content: "Download CV";
+    content: attr(data-text);
     height: 55px;
     width: 180px;
     display: flex;

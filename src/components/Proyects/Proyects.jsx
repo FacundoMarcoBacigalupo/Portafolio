@@ -5,7 +5,7 @@ import NbStyle from '../../assets/img/nbStyle.png'
 import ToDo from '../../assets/img/ToDo.png'
 import Papelera from '../../assets/img/Papelera.png'
 import Blog from "../../assets/img/blog.jpg"
-import hackathon from "../../assets/img/hackathon.jpg"
+import mythfImg from "../../assets/img/Mythf.png"
 import "./proyects.css"
 
 const Proyects2 = () => {
@@ -46,11 +46,11 @@ const Proyects2 = () => {
                 
                 <article id='c4' className="card">
                     <header className="card__thumb">
-                        <img src={hackathon} alt='hackathon' />
+                        <img src={mythfImg} alt='Mythf' />
                     </header>
                     <div className="card__body">
-                        <h2 className="card__title">{t("proyects.hackathon")}</h2>
-                        <a href='https://hackaton-no-country.vercel.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
+                        <h2 className="card__title">{t("proyects.mythf")}</h2>
+                        <a href='https://mythf.vercel.app/' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
                 </article>
                 

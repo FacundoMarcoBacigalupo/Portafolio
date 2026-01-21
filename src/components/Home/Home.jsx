@@ -16,8 +16,8 @@ const Home = () => {
                 <p className='text'>{t("home.text")}</p>
                 
                 <div className='containerButtons'>
-                    <Button href={"https://wa.me/+5401127398858"}/>
-                    <ButtonDownload/>
+                    <Button href={"https://wa.me/+5401127398858"} label={t("home.contact")}/>
+                    <ButtonDownload label={t("home.download")}/>
                 </div>
             </section>
         </main>
