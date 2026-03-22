@@ -3,7 +3,6 @@ import React from 'react'
 import MFL from '../../assets/img/MFL-Agencia-Marketing-Digital.png'
 import NbStyle from '../../assets/img/nbStyle.png'
 import ToDo from '../../assets/img/ToDo.png'
-import Papelera from '../../assets/img/Papelera.png'
 import Blog from "../../assets/img/blog.jpg"
 import mythfImg from "../../assets/img/Mythf.png"
 import "./proyects.css"
@@ -50,20 +49,10 @@ const Proyects2 = () => {
                     </header>
                     <div className="card__body">
                         <h2 className="card__title">{t("proyects.mythf")}</h2>
-                        <a href='https://mythf.vercel.app/' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
+                        <a href='https://mythf.site' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
                 </article>
-                
-                <article id='c5' className="card">
-                    <header className="card__thumb">
-                        <img src={Papelera} alt='Papelera' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.papelera")}</h2>
-                        <a href='https://papelera-canuelas.netlify.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-                
+                                
                 <article id='c6' className="card">
                     <header className="card__thumb">
                         <img src={Blog} alt='Blog' />

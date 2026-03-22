@@ -37,18 +37,17 @@ const NavBar = () => {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
-            window.scrollTo({
-                top: section.offsetTop,
-                behavior: "smooth"
-            });
+            section.scrollIntoView({ behavior: 'smooth' });
             setIsMenuOpen(false);
         }
     };
 
     return (
         <div className='containerNav'>
-            <button className="menuButton" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>}
+            <button className={`menuButton ${isMenuOpen ? "open" : ""}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
             </button>
             <nav className={isMenuOpen ? "open" : ""}>
                 <span id='n1' className={activeSection === "home" ? "active" : ""} onClick={() => scrollToSection("home")}>{t("navbar.span-home")}</span>

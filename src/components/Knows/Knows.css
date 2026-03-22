@@ -1,6 +1,5 @@
 #knows{
-    padding-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 80px;
 }
 
 .container{
@@ -125,13 +124,11 @@
     }
 
     .cardSkills p{
-        text-align: center;
-        font-size: 28px;
-        font-weight: 700;
+        font-size: 22px;
     }
     .cardSkills img{
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         object-fit: cover;
         object-position: center;
     }
@@ -140,34 +137,24 @@
 @media screen and (max-width: 500px) {
     .container{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4"
-            "card5"
-            "card6"
-            "card7"
-            "card8"
-            "card9"
-            "card10"
-            "card11"
-            "card12"
-            "card13"
-            "card14";
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8"
+            "card9 card10"
+            "card11 card12"
+            "card13 card14";
+        grid-gap: 10px;
+        width: 95%;
     }
 
-        .cardSkills p{
-        text-align: center;
-        font-size: 25px;
-        font-weight: 700;
+    .cardSkills p{
+        font-size: 18px;
     }
     .cardSkills img{
-        height: 60px;
-        width: 60px;
-        object-fit: cover;
-        object-position: center;
+        height: 40px;
+        width: 40px;
     }
 }
