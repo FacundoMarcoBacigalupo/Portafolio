@@ -15,10 +15,14 @@
     },
     "proyects":{
         "title": "Projects",
-        "mfl": "Digital marketing agency website",
         "nbstyle": "Complete simulation of a sneaker Ecommerce",
         "todo": "ToDo, task list plus a section to search and download images",
         "mythf": "My Software Agency and Digital Marketing",
+        "crmythf": "CRM MythF, business management system",
+        "edificacionesJonathan": "Website for construction and remodeling company",
+        "mimosPapel": "Personalized paper products store",
+        "canuelasProps": "Online real estate for buying and renting properties",
+        "oportoFightClub": "Website for a martial arts and boxing gym",
         "blog": "Blog about general news from the IT world",
         "button": "View more"
     },
