@@ -9,6 +9,7 @@ import MimosPapel from "../../assets/img/mimosPapel.png"
 import CanuelasProps from "../../assets/img/canuelasProps.png"
 import OportoFightClub from "../../assets/img/oportoFightClub.png"
 import CrmMythf from "../../assets/img/crm.png"
+import TurnosMythF from "../../assets/img/TurnosMythF.png"
 import "./proyects.css"
 
 const Proyects2 = () => {
@@ -106,6 +107,16 @@ const Proyects2 = () => {
                     <div className="card__body">
                         <h2 className="card__title">{t("proyects.blog")}</h2>
                         <a href='https://it-noticias.netlify.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
+                    </div>
+                </article>
+
+                <article className="card">
+                    <header className="card__thumb">
+                        <img src={TurnosMythF} alt='Turnos MythF' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">{t("proyects.turnosMythf")}</h2>
+                        <a href='https://mythf.site' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
                 </article>
             </section>
