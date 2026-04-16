@@ -116,7 +116,7 @@ const Proyects2 = () => {
                     </header>
                     <div className="card__body">
                         <h2 className="card__title">{t("proyects.turnosMythf")}</h2>
-                        <a href='https://mythf.site' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
+                        <a href='https://turnos.mythf.site' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
                 </article>
             </section>
