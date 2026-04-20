@@ -10,6 +10,7 @@ import CanuelasProps from "../../assets/img/canuelasProps.png"
 import OportoFightClub from "../../assets/img/oportoFightClub.png"
 import CrmMythf from "../../assets/img/crm.png"
 import TurnosMythF from "../../assets/img/TurnosMythF.png"
+import RutaVivaMythfImg from "../../assets/img/RutaVivaMythF.png"
 import "./proyects.css"
 
 const Proyects2 = () => {
@@ -117,6 +118,16 @@ const Proyects2 = () => {
                     <div className="card__body">
                         <h2 className="card__title">{t("proyects.turnosMythf")}</h2>
                         <a href='https://turnos.mythf.site' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
+                    </div>
+                </article>
+
+                <article className="card">
+                    <header className="card__thumb">
+                        <img src={RutaVivaMythfImg} alt='RutaViva MythF' />
+                    </header>
+                    <div className="card__body">
+                        <h2 className="card__title">{t("proyects.rutavivaMythf")}</h2>
+                        <a href='https://rutaviva.mythf.site/' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
                     </div>
                 </article>
             </section>
