@@ -1,94 +1,158 @@
-import { useState, useRef } from 'react'
-import { useTranslation } from 'react-i18next'
-import GitHub from "../../assets/icons/icons8-github.svg"
-import Linkedin from "../../assets/icons/icons8-linkedin.svg"
-import emailjs from "@emailjs/browser"
-import "./Contact.css"
+import React, { useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
+import GitHub from '../../assets/icons/icons8-github.svg';
+import Linkedin from '../../assets/icons/icons8-linkedin.svg';
+import './Contact.css';
+
+const SERVICE_ID = 'service_rzvqy8t';
+const TEMPLATE_ID = 'template_0a85z8s';
+const PUBLIC_KEY = 'o-fORQkoze7TQoYO7';
+
+const isValidEmail = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 
 const Contact = () => {
-    const [t] = useTranslation(["global"]);
+    const [t] = useTranslation(['global']);
+    const refForm = useRef();
+    const [fields, setFields] = useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState({ type: '', text: '' });
+    const [sending, setSending] = useState(false);
 
+    const handleChange = (e) => {
+        setFields((f) => ({ ...f, [e.target.name]: e.target.value }));
+    };
 
-    const [fields, setFields] = useState({name:"", email:"", message:""})
-    const [validations, setValidations] = useState({name:false, email:false, message:false});
-
-
-    const refForm = useRef()
-    const serviceId = "service_rzvqy8t";
-    const templateId = "template_0a85z8s";
-    const apiKey = "o-fORQkoze7TQoYO7";
-
-
-    const handleInputChange = (e) =>{
-        const value = e.target.value;
-        const name = e.target.name;
-        
-        setFields({...fields, [name]:value})
-        setValidations({...validations, [name]:value.trim() !== ""});
-    }
-
-
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        
-        if(fields.email.endsWith("@gmail.com") || fields.email.endsWith("@hotmail.com")){
-            emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
-            .catch( error => console.error(error) )
-            
-            alert("Submitted form")
+        if (!fields.name.trim() || !fields.message.trim()) {
+            setStatus({ type: 'error', text: t('contact.errMissing') });
+            return;
         }
-        else{
-            alert("Fill out the form correctly")
+        if (!isValidEmail(fields.email)) {
+            setStatus({ type: 'error', text: t('contact.errEmail') });
+            return;
         }
-        
-        setFields({name:"", email:"", message:""})
-        setValidations({name:false, email:false, message:false})
-    }
-
-
+        try {
+            setSending(true);
+            await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, refForm.current, PUBLIC_KEY);
+            setStatus({ type: 'ok', text: t('contact.ok') });
+            setFields({ name: '', email: '', message: '' });
+        } catch (err) {
+            console.error(err);
+            setStatus({ type: 'error', text: t('contact.errSend') });
+        } finally {
+            setSending(false);
+        }
+    };
 
     return (
-        <div id='contact'>
-            <h2 className='titlePresenting'>{t("contact.sendmsj")}</h2>
-            <div id='containerCon'>
-                <p className='description'>{t("contact.description")}</p>
-                
-                <section id='containerContact'>
-                    <form ref={refForm} onSubmit={handleSubmit} className='formStyle'>
-                        <section className='nameAddress'>
-                            <div>
-                                <label>{t("contact.name")}</label>
-                                <input type="text" placeholder={t("contact.name")} name="name" id="name" value={fields.name} onChange={handleInputChange} required />
-                            </div>
-                            
-                            <div>
-                                <label>{t("contact.email")}</label>
-                                <input type="email" placeholder={t("contact.email")} name="email" id="email" value={fields.email} onChange={handleInputChange} required />
-                            </div>
-                        </section>
-                        <section className='yourMessage'>
-                            <label>{t("contact.yourmsj")}</label>
-                            <textarea placeholder={`${t("contact.yourmsjplaceholder")}`} name="message" id="message" value={fields.message} onChange={handleInputChange} required></textarea>
-                            
-                            <button type='submit' className='buttonChange'>{t("contact.button")}</button>
-                        </section>
-                    </form>
-                </section>
-            </div>
-            
-            <section className='containerPadreFooterRRSS'>
-                <p>{t("contact.rrss")}</p>
-                <div className='containerFooterRRSS'>
-                    <a href="https://github.com/FacundoMarcoBacigalupo" target="_blank" rel="noreferrer">
-                        <img src={GitHub} alt="GitHub" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/facundomarcobacigalupo/" target="_blank" rel="noreferrer">
-                        <img src={Linkedin} alt="LinkedIn " />
-                    </a>
+        <section id="contact" className="section contact">
+            <div className="container">
+                <div className="section-label" data-reveal="up">
+                    <span className="num">03</span> / <span>{t('contact.label')}</span>
+                    <span className="line" />
                 </div>
-            </section>
-        </div>
-    )
-}
 
-export default Contact
+                <div className="contact-grid">
+                    <div className="contact-intro" data-reveal="left">
+                        <h2 className="section-title">
+                            {t('contact.heading')} <em>.</em>
+                        </h2>
+                        <p className="contact-text">{t('contact.description')}</p>
+
+                        <ul className="contact-list">
+                            <li>
+                                <span className="mono mute">EMAIL</span>
+                                <a href="mailto:marcofacundolucas@gmail.com">marcofacundolucas@gmail.com</a>
+                            </li>
+                            <li>
+                                <span className="mono mute">WHATSAPP</span>
+                                <a href="https://wa.me/+5401127398858" target="_blank" rel="noreferrer">
+                                    +54 011 2739-8858
+                                </a>
+                            </li>
+                            <li>
+                                <span className="mono mute">LOCATION</span>
+                                <span>Buenos Aires, AR</span>
+                            </li>
+                        </ul>
+
+                        <div className="contact-socials">
+                            <span className="mono mute">{t('contact.rrss')}</span>
+                            <div className="contact-socials__row">
+                                <a href="https://github.com/FacundoMarcoBacigalupo" target="_blank" rel="noreferrer" aria-label="GitHub">
+                                    <img src={GitHub} alt="" loading="lazy" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/facundomarcobacigalupo/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                                    <img src={Linkedin} alt="" loading="lazy" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form ref={refForm} onSubmit={handleSubmit} className="contact-form" data-reveal="right" noValidate>
+                        <div className="field">
+                            <label htmlFor="name">{t('contact.name')}</label>
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                                placeholder={t('contact.namePh')}
+                                value={fields.name}
+                                onChange={handleChange}
+                                autoComplete="name"
+                                required
+                            />
+                        </div>
+                        <div className="field">
+                            <label htmlFor="email">{t('contact.email')}</label>
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                placeholder={t('contact.emailPh')}
+                                value={fields.email}
+                                onChange={handleChange}
+                                autoComplete="email"
+                                required
+                            />
+                        </div>
+                        <div className="field">
+                            <label htmlFor="message">{t('contact.yourmsj')}</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder={t('contact.yourmsjplaceholder')}
+                                value={fields.message}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        {status.text && (
+                            <p className={`form-status ${status.type === 'ok' ? 'ok' : 'err'}`}>
+                                {status.text}
+                            </p>
+                        )}
+
+                        <button type="submit" className="btn btn--primary form-submit" disabled={sending}>
+                            {sending ? t('contact.sending') : t('contact.button')}
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <path d="M5 12h14" />
+                                <path d="m13 5 7 7-7 7" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <footer className="footer container">
+                <span className="mono mute">© {new Date().getFullYear()} Facundo Marco Bacigalupo</span>
+                <span className="mono mute">{t('footer.crafted')}</span>
+            </footer>
+        </section>
+    );
+};
+
+export default Contact;

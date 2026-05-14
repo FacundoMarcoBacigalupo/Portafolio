@@ -1,41 +1,77 @@
 {
-    "navbar":{
+    "navbar": {
         "span-home": "Home",
-        "span-knows": "Knows",
+        "span-knows": "Stack",
         "span-proyects": "Projects",
         "span-contact": "Contact"
     },
-    "home":{
-        "text": "I'm passionate about Software Development 💻 and developing my skills in the field I specialize in. I consider myself responsible, disciplined and enthusiastic. I enjoy working in a team 🤝 and using those encounters to gain knowledge 📘. I'm passionate about books on personal development and the Marvel Cinematic Universe 🎬. I'm ready to face new challenges! 🚀",
+    "home": {
+        "tag": "Open to new projects",
+        "role": "Software Developer · Frontend & Fullstack",
+        "text": "I'm passionate about software development {code} and growing in the field I specialize in. I'm responsible, disciplined and enthusiastic. I enjoy working in a team {team} and using those encounters to gain knowledge {book}. I love books on personal development and the Marvel Cinematic Universe {film}. Ready for new challenges! {rocket}",
         "contact": "Contact me",
-        "download": "Download CV"
+        "viewProjects": "View projects",
+        "download": "Download CV",
+        "identity": "Identity",
+        "live": "Live",
+        "id": {
+            "name": "Name",
+            "role": "Role",
+            "focus": "Focus",
+            "location": "Location",
+            "status": "Status",
+            "statusValue": "Available"
+        }
     },
-    "knows":{
-        "skills": "Skills"
+    "knows": {
+        "skills": "Stack",
+        "title": "Technologies I use",
+        "subtitle": "The tools I rely on to build interfaces and full products.",
+        "groups": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "db": "Databases",
+            "tools": "Tools",
+            "patterns": "Patterns & Methodologies"
+        }
     },
-    "proyects":{
-        "title": "Projects",
-        "nbstyle": "Complete simulation of a sneaker Ecommerce",
-        "todo": "ToDo, task list plus a section to search and download images",
-        "mythf": "My Software Agency and Digital Marketing",
-        "crmythf": "CRM MythF, business management system",
-        "edificacionesJonathan": "Website for construction and remodeling company",
-        "mimosPapel": "Personalized paper products store",
-        "canuelasProps": "Online real estate for buying and renting properties",
-        "oportoFightClub": "Website for a martial arts and boxing gym",
-        "blog": "Blog about general news from the IT world",
-        "turnosMythf": "Turnos MythF, online appointment management system",
-        "rutavivaMythf": "RutaViva MythF, intercity transport management system",
+    "proyects": {
+        "label": "Projects",
+        "title": "Selected work",
+        "subtitle": "A selection of web products and platforms I designed and built.",
+        "nbstyle": "NbStyle — Sneaker Ecommerce",
+        "todo": "ToDo — Task list with image search",
+        "mythf": "MythF — Software & Marketing Agency",
+        "crmythf": "CRM MythF — Business management system",
+        "edificacionesJonathan": "Edificaciones Jonathan — Construction company",
+        "mimosPapel": "Mimos en Papel — Personalized paper goods",
+        "canuelasProps": "Cañuelas Props — Online real estate",
+        "oportoFightClub": "Oporto Fight Club — MMA & Boxing gym",
+        "blog": "IT Blog — General IT news",
+        "turnosMythf": "Turnos MythF — Scheduling SaaS for small businesses (salons, gyms, dentists, etc.)",
+        "rutavivaMythf": "RutaViva MythF — Intercity transport system",
         "button": "View more"
     },
-    "contact":{
+    "contact": {
+        "label": "Contact",
+        "heading": "Let's talk",
         "sendmsj": "Send me a message",
-        "description": "Write me to say good morning, ask for my resume, or see if we can do something awesome together? I'm glad to meet you!",
-        "name": "Your Name",
-        "email": "Email Address",
-        "yourmsj": "Your Message",
-        "yourmsjplaceholder": "Hello, we need a Software Developer to do a project from Company X.",
-        "button": "Send Message",
-        "rrss": "My social media"
+        "description": "Want to say hi, ask for my résumé, or build something together? I reply within 24 hours.",
+        "name": "Name",
+        "namePh": "Your name",
+        "email": "Email",
+        "emailPh": "you@email.com",
+        "yourmsj": "Message",
+        "yourmsjplaceholder": "Hi, we need a developer for a project…",
+        "button": "Send message",
+        "sending": "Sending…",
+        "rrss": "Socials",
+        "ok": "Message sent. Thanks!",
+        "errMissing": "Please fill in your name and message.",
+        "errEmail": "Please enter a valid email.",
+        "errSend": "Couldn't send your message. Please try again."
+    },
+    "footer": {
+        "crafted": "Crafted with care."
     }
 }

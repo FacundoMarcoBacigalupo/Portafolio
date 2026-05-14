@@ -1,138 +1,89 @@
-import { useTranslation } from 'react-i18next'
-import React from 'react'
-import NbStyle from '../../assets/img/nbStyle.png'
-import ToDo from '../../assets/img/ToDo.png'
-import Blog from "../../assets/img/blog.jpg"
-import mythfImg from "../../assets/img/Mythf.png"
-import EdificacionesJonathan from "../../assets/img/constructura.png"
-import MimosPapel from "../../assets/img/mimosPapel.png"
-import CanuelasProps from "../../assets/img/canuelasProps.png"
-import OportoFightClub from "../../assets/img/oportoFightClub.png"
-import CrmMythf from "../../assets/img/crm.png"
-import TurnosMythF from "../../assets/img/TurnosMythF.png"
-import RutaVivaMythfImg from "../../assets/img/RutaVivaMythF.png"
-import "./proyects.css"
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import NbStyle from '../../assets/img/nbStyle.png';
+import ToDo from '../../assets/img/ToDo.png';
+import Blog from '../../assets/img/blog.jpg';
+import mythfImg from '../../assets/img/Mythf.png';
+import EdificacionesJonathan from '../../assets/img/constructura.png';
+import MimosPapel from '../../assets/img/mimosPapel.png';
+import CanuelasProps from '../../assets/img/canuelasProps.png';
+import OportoFightClub from '../../assets/img/oportoFightClub.png';
+import CrmMythf from '../../assets/img/crm.png';
+import TurnosMythF from '../../assets/img/TurnosMythF.png';
+import RutaVivaMythfImg from '../../assets/img/RutaVivaMythF.png';
+import './proyects.css';
 
-const Proyects2 = () => {
-    const [t] = useTranslation(["global"]);
+const projects = [
+    { key: 'mythf', img: mythfImg, href: 'https://mythf.site', tags: ['Agency', 'Brand'] },
+    { key: 'crmythf', img: CrmMythf, href: 'https://mythf.site/servicio-paquete-software', tags: ['CRM', 'SaaS'] },
+    { key: 'turnosMythf', img: TurnosMythF, href: 'https://turnos.mythf.site', tags: ['SaaS', 'Agendas'] },
+    { key: 'rutavivaMythf', img: RutaVivaMythfImg, href: 'https://rutaviva.mythf.site/', tags: ['Transport', 'Fullstack'] },
+    { key: 'nbstyle', img: NbStyle, href: 'https://ecommerce-nbstyle.netlify.app', tags: ['Ecommerce', 'React'] },
+    { key: 'edificacionesJonathan', img: EdificacionesJonathan, href: 'https://edificaciones-jonathan.vercel.app', tags: ['Construction', 'Landing'] },
+    { key: 'mimosPapel', img: MimosPapel, href: 'https://mimos-papel.vercel.app', tags: ['Shop', 'Brand'] },
+    { key: 'canuelasProps', img: CanuelasProps, href: 'https://canuelas-props.vercel.app', tags: ['Real Estate'] },
+    { key: 'oportoFightClub', img: OportoFightClub, href: 'https://oporto-fight-club.vercel.app', tags: ['Gym', 'Landing'] },
+    { key: 'todo', img: ToDo, href: 'https://lista-de-tareas-todo.netlify.app', tags: ['App', 'Utility'] },
+    { key: 'blog', img: Blog, href: 'https://it-noticias.netlify.app', tags: ['Blog', 'News'] },
+];
+
+const Proyects = () => {
+    const [t] = useTranslation(['global']);
 
     return (
-        <div id='proyects'>
-            <h2 className='titlePresenting'>{t("proyects.title")}</h2>
+        <section id="proyects" className="section projects">
+            <div className="container">
+                <div className="section-label" data-reveal="up">
+                    <span className="num">02</span> / <span>{t('proyects.label')}</span>
+                    <span className="line" />
+                </div>
+                <h2 className="section-title" data-reveal="up">
+                    {t('proyects.title')} <em>.</em>
+                </h2>
+                <p className="section-sub" data-reveal="up">{t('proyects.subtitle')}</p>
 
-            <section className='containerProyects'>
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={NbStyle} alt='NbStyle' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.nbstyle")}</h2>
-                        <a href='https://ecommerce-nbstyle.netlify.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
+                <div className="projects-grid">
+                    {projects.map((p, i) => (
+                        <a
+                            key={p.key}
+                            href={p.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="proj-card"
+                            data-reveal="up"
+                            style={{ transitionDelay: `${0.05 * (i % 6)}s` }}
+                        >
+                            <div className="proj-thumb">
+                                <img
+                                    src={p.img}
+                                    alt={t(`proyects.${p.key}`)}
+                                    loading={i < 3 ? 'eager' : 'lazy'}
+                                    decoding="async"
+                                />
+                            </div>
+                            <div className="proj-body">
+                                <div className="proj-meta">
+                                    <span className="mono mute">P/{String(i + 1).padStart(2, '0')}</span>
+                                    <div className="proj-tags">
+                                        {p.tags.map((tag) => (
+                                            <span key={tag} className="proj-tag">{tag}</span>
+                                        ))}
+                                    </div>
+                                </div>
+                                <h3 className="proj-title">
+                                    <span>{t(`proyects.${p.key}`)}</span>
+                                    <svg className="proj-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7" />
+                                        <path d="M8 7h9v9" />
+                                    </svg>
+                                </h3>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
 
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={ToDo} alt='ToDo' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.todo")}</h2>
-                        <a href='https://lista-de-tareas-todo.netlify.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={mythfImg} alt='Mythf' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.mythf")}</h2>
-                        <a href='https://mythf.site' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={CrmMythf} alt='CRM MythF' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.crmythf")}</h2>
-                        <a href='https://mythf.site/servicio-paquete-software' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={EdificacionesJonathan} alt='Edificaciones Jonathan' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.edificacionesJonathan")}</h2>
-                        <a href='https://edificaciones-jonathan.vercel.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={MimosPapel} alt='Mimos en Papel' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.mimosPapel")}</h2>
-                        <a href='https://mimos-papel.vercel.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={CanuelasProps} alt='Cañuelas Props' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.canuelasProps")}</h2>
-                        <a href='https://canuelas-props.vercel.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={OportoFightClub} alt='Oporto Fight Club' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.oportoFightClub")}</h2>
-                        <a href='https://oporto-fight-club.vercel.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={Blog} alt='Blog' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.blog")}</h2>
-                        <a href='https://it-noticias.netlify.app' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={TurnosMythF} alt='Turnos MythF' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.turnosMythf")}</h2>
-                        <a href='https://turnos.mythf.site' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-
-                <article className="card">
-                    <header className="card__thumb">
-                        <img src={RutaVivaMythfImg} alt='RutaViva MythF' />
-                    </header>
-                    <div className="card__body">
-                        <h2 className="card__title">{t("proyects.rutavivaMythf")}</h2>
-                        <a href='https://rutaviva.mythf.site/' target="_blank" rel="noreferrer" className="card__more">{t("proyects.button")}</a>
-                    </div>
-                </article>
-            </section>
-        </div>
-    )
-}
-
-export default Proyects2
+export default Proyects;

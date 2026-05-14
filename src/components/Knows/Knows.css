@@ -1,160 +1,94 @@
-#knows{
-    padding-top: 80px;
+.stack .section-sub {
+    color: var(--text-mute);
+    font-size: 16px;
+    max-width: 62ch;
+    margin-top: -18px;
+    margin-bottom: 36px;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
+.stack-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "card1 card2 card3 card4"
-        "card5 card6 card7 card8"
-        "card9 card10 card11 card12"
-        "card13 card13 card14 card14";
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
 }
 
-#card1{
-    grid-area: card1;
+.stack-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    transition:
+        border-color 0.45s var(--ease-soft),
+        transform 0.45s var(--ease),
+        box-shadow 0.45s var(--ease-soft),
+        background-color 0.45s var(--ease-soft);
 }
-#card2{
-    grid-area: card2;
-}
-#card3{
-    grid-area: card3;
-}
-#card4{
-    grid-area: card4;
-}
-#card5{
-    grid-area: card5;
-}
-#card6{
-    grid-area: card6;
-}
-#card7{
-    grid-area: card7;
-}
-#card8{
-    grid-area: card8;
-}
-#card9{
-    grid-area: card9;
-}
-#card10{
-    grid-area: card10;
-}
-#card11{
-    grid-area: card11;
-}
-#card12{
-    grid-area: card12;
-}
-#card13{
-    grid-area: card13;
-}
-#card14{
-    grid-area: card14;
+.stack-card:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-4px);
+    background-color: rgba(255, 255, 255, 0.045);
+    box-shadow: 0 18px 36px -22px rgba(0, 0, 0, 0.55),
+        0 6px 18px -10px rgba(220, 20, 60, 0.12);
 }
 
-.cardSkills{
-    text-decoration: none;
-    color: rgb(214, 214, 214);
-    border: 1px solid rgba(224, 224, 224, 0.521);
-    padding: 5px;
-    text-align: center;
-}
-.cardSkills:hover{
-    transition: all .6s;
-    border: 1px solid #fff;
-    color: crimson;
-    box-shadow: 1px 1px 40px crimson;
-    border: 1px solid crimson;
-
-}
-.cardSkills p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-}
-.cardSkills img{
-    height: 90px;
-    width: 90px;
-    object-fit: cover;
-    object-position: center;
+.stack-card__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
 }
 
-
-
-
-
-
-
-@media screen and (max-width: 930px) {
-    .container{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "card1 card2 card3"
-            "card4 card5 card6"
-            "card7 card8 card9"
-            "card10 card11 card12"
-            "card13 card14 card14";
-    }
+.stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-
-@media screen and (max-width: 750px) {
-    .container{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8"
-            "card9 card10"
-            "card11 card12"
-            "card13 card14";
-    }
-
-    .cardSkills p{
-        font-size: 22px;
-    }
-    .cardSkills img{
-        height: 60px;
-        width: 60px;
-        object-fit: cover;
-        object-position: center;
-    }
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.02);
+    transition:
+        border-color 0.4s var(--ease-soft),
+        color 0.4s var(--ease-soft),
+        background-color 0.4s var(--ease-soft),
+        transform 0.35s var(--ease),
+        box-shadow 0.4s var(--ease-soft);
+}
+.chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px -10px rgba(220, 20, 60, 0.35);
+}
+.chip img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.chip__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px rgba(220, 20, 60, 0.5);
+}
+.chip--text:hover .chip__dot {
+    background: var(--accent);
 }
 
-@media screen and (max-width: 500px) {
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8"
-            "card9 card10"
-            "card11 card12"
-            "card13 card14";
-        grid-gap: 10px;
-        width: 95%;
-    }
-
-    .cardSkills p{
-        font-size: 18px;
-    }
-    .cardSkills img{
-        height: 40px;
-        width: 40px;
-    }
+@media (max-width: 640px) {
+    .stack-card { padding: 18px; }
+    .chip { padding: 7px 10px; font-size: 12px; }
+    .stack .section-sub { font-size: 14.5px; }
 }

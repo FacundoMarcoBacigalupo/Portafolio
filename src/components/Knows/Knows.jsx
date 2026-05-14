@@ -1,101 +1,119 @@
-import { useTranslation } from 'react-i18next'
-import React from 'react'
-import bootstrap from '../../assets/icons/icons8-boostrap.svg'
-import git from '../../assets/icons/icons8-git.svg'
-import html from "../../assets/icons/html5-svgrepo-com.svg"
-import javascript from '../../assets/icons/javascript-svgrepo-com.svg'
-import reactJs from '../../assets/icons/react-svgrepo-com.svg'
-import responsive from '../../assets/icons/responsive-design-symbol-svgrepo-com.svg'
-import sass from '../../assets/icons/sass-svgrepo-com.svg'
-import css from '../../assets/icons/css3-02-svgrepo-com.svg'
-import mongodb from '../../assets/icons/dbs-mongodb-svgrepo-com.svg'
-import nodejs from "../../assets/icons/node-js-svgrepo-com.svg"
-import java from "../../assets/icons/java.png"
-import cshart from "../../assets/icons/iconCsharp.png"
-import mySQL from "../../assets/icons/mysql.png"
-import kotlin from "../../assets/icons/kotlin.svg"
-import "./Knows.css"
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import bootstrap from '../../assets/icons/icons8-boostrap.svg';
+import git from '../../assets/icons/icons8-git.svg';
+import html from '../../assets/icons/html5-svgrepo-com.svg';
+import javascript from '../../assets/icons/javascript-svgrepo-com.svg';
+import reactJs from '../../assets/icons/react-svgrepo-com.svg';
+import responsive from '../../assets/icons/responsive-design-symbol-svgrepo-com.svg';
+import sass from '../../assets/icons/sass-svgrepo-com.svg';
+import css from '../../assets/icons/css3-02-svgrepo-com.svg';
+import mongodb from '../../assets/icons/dbs-mongodb-svgrepo-com.svg';
+import nodejs from '../../assets/icons/node-js-svgrepo-com.svg';
+import java from '../../assets/icons/java.png';
+import csharp from '../../assets/icons/iconCsharp.png';
+import mySQL from '../../assets/icons/mysql.png';
+import kotlin from '../../assets/icons/kotlin.svg';
+import './Knows.css';
+
+const groups = [
+    {
+        key: 'frontend',
+        items: [
+            { name: 'HTML', icon: html, href: 'https://developer.mozilla.org/es/docs/Web/HTML' },
+            { name: 'CSS', icon: css, href: 'https://developer.mozilla.org/es/docs/Web/CSS' },
+            { name: 'Sass', icon: sass, href: 'https://sass-lang.com' },
+            { name: 'JavaScript', icon: javascript, href: 'https://developer.mozilla.org/es/docs/Web/JavaScript' },
+            { name: 'TypeScript', href: 'https://www.typescriptlang.org/' },
+            { name: 'React', icon: reactJs, href: 'https://es.react.dev' },
+            { name: 'Bootstrap', icon: bootstrap, href: 'https://getbootstrap.com' },
+            { name: 'Responsive', icon: responsive, href: 'https://web.dev/responsive-web-design-basics/' },
+        ],
+    },
+    {
+        key: 'backend',
+        items: [
+            { name: 'Node.js', icon: nodejs, href: 'https://nodejs.org/en' },
+            { name: 'Java', icon: java, href: 'https://dev.java' },
+            { name: 'Spring Boot', href: 'https://spring.io/projects/spring-boot' },
+            { name: 'C#', icon: csharp, href: 'https://dotnet.microsoft.com/es-es/languages/csharp' },
+            { name: 'ASP.NET Core', href: 'https://dotnet.microsoft.com/es-es/apps/aspnet' },
+            { name: 'Kotlin', icon: kotlin, href: 'https://kotlinlang.org/' },
+        ],
+    },
+    {
+        key: 'db',
+        items: [
+            { name: 'MongoDB', icon: mongodb, href: 'https://www.mongodb.com/es' },
+            { name: 'MySQL', icon: mySQL, href: 'https://www.mysql.com' },
+            { name: 'SQL Server', href: 'https://www.microsoft.com/sql-server' },
+            { name: 'Firebase', href: 'https://firebase.google.com/' },
+        ],
+    },
+    {
+        key: 'tools',
+        items: [
+            { name: 'Git', icon: git, href: 'https://git-scm.com' },
+            { name: 'Claude Code', href: 'https://www.claude.com/product/claude-code' },
+        ],
+    },
+    {
+        key: 'patterns',
+        items: [
+            { name: 'MVC', href: 'https://developer.mozilla.org/es/docs/Glossary/MVC' },
+            { name: 'MVVM', href: 'https://learn.microsoft.com/dotnet/architecture/maui/mvvm' },
+            { name: 'Scrum', href: 'https://www.scrum.org/resources/what-scrum-module' },
+        ],
+    },
+];
 
 const Knows = () => {
-    const [t] = useTranslation(["global"]);
+    const [t] = useTranslation(['global']);
 
     return (
-        <div id='knows'>
-            <h2 className='titlePresenting'>{t("knows.skills")}</h2>
-            
-            <article className='container'>
-                    <a href="https://nodejs.org/en" target="_blank" rel="noreferrer" id='card1' className='cardSkills'>
-                        <p>Node.js</p>
-                        <img src={nodejs} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://www.mongodb.com/es" target="_blank" rel="noreferrer" id='card2' className='cardSkills'>
-                        <p>MongoDB</p>
-                        <img src={mongodb} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noreferrer" id='card3' className='cardSkills'>
-                        <p>Css</p>
-                        <img src={css} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://sass-lang.com" target="_blank" rel="noreferrer" id='card4' className='cardSkills'>
-                        <p>Sass</p>
-                        <img src={sass} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://www.40defiebre.com/que-es/diseno-responsive" target="_blank" rel="noreferrer" id='card5' className='cardSkills'>
-                        <p>Responsive</p>
-                        <img src={responsive} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://es.react.dev" target="_blank" rel="noreferrer" id='card6' className='cardSkills'>
-                        <p>React.js</p>
-                        <img src={reactJs} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noreferrer" id='card7' className='cardSkills'>
-                        <p>Javascript</p>
-                        <img src={javascript} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noreferrer" id='card8' className='cardSkills'>
-                        <p>Html</p>
-                        <img src={html} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://getbootstrap.com" target="_blank" rel="noreferrer" id='card9' className='cardSkills'>
-                        <p>Bootstrap</p>
-                        <img src={bootstrap} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://git-scm.com" target="_blank" rel="noreferrer" id='card10' className='cardSkills'>
-                        <p>Git</p>
-                        <img src={git} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://dev.java" target="_blank" rel="noreferrer" id='card11' className='cardSkills'>
-                        <p>Java</p>
-                        <img src={java} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://dotnet.microsoft.com/es-es/languages/csharp" target="_blank" rel="noreferrer" id='card12' className='cardSkills'>
-                        <p>C#</p>
-                        <img src={cshart} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://www.mysql.com" target="_blank" rel="noreferrer" id='card13' className='cardSkills'>
-                        <p>MySQL</p>
-                        <img src={mySQL} alt="Skill" />
-                    </a>
-                    
-                    <a href="https://kotlinlang.org/" target="_blank" rel="noreferrer" id='card14' className='cardSkills'>
-                        <p>Kotlin</p>
-                        <img src={kotlin} alt="Skill" />
-                    </a>
-            </article>
-        </div>
-    )
-}
+        <section id="knows" className="section stack">
+            <div className="container">
+                <div className="section-label" data-reveal="up">
+                    <span className="num">01</span> / <span>{t('knows.skills')}</span>
+                    <span className="line" />
+                </div>
+                <h2 className="section-title" data-reveal="up">
+                    {t('knows.title')} <em>.</em>
+                </h2>
+                <p className="section-sub" data-reveal="up">{t('knows.subtitle')}</p>
 
-export default Knows
+                <div className="stack-grid">
+                    {groups.map((g, i) => (
+                        <article
+                            key={g.key}
+                            className="stack-card"
+                            data-reveal="up"
+                            style={{ transitionDelay: `${0.08 * i}s` }}
+                        >
+                            <header className="stack-card__head">
+                                <span className="mono mute">// {t(`knows.groups.${g.key}`)}</span>
+                                <span className="mono mute">{String(g.items.length).padStart(2, '0')}</span>
+                            </header>
+                            <ul className="stack-list">
+                                {g.items.map((it) => (
+                                    <li key={it.name}>
+                                        <a href={it.href} target="_blank" rel="noreferrer" className={`chip ${it.icon ? '' : 'chip--text'}`}>
+                                            {it.icon ? (
+                                                <img src={it.icon} alt="" loading="lazy" width="20" height="20" />
+                                            ) : (
+                                                <span className="chip__dot" aria-hidden="true" />
+                                            )}
+                                            <span>{it.name}</span>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Knows;
