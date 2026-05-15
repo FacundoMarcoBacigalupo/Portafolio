@@ -5,7 +5,14 @@
     right: 0;
     z-index: 1000;
     padding: 16px 0;
+    opacity: 0;
+    animation: nav-fade-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     transition: padding 0.3s ease, background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+@keyframes nav-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .nav-shell.is-scrolled {

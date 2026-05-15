@@ -66,7 +66,7 @@ const NavBar = () => {
     }, []);
 
     return (
-        <header className={`nav-shell intro-down ${scrolled ? 'is-scrolled' : ''}`}>
+        <header className={`nav-shell ${scrolled ? 'is-scrolled' : ''}`}>
             <div className="nav-inner">
                 <button
                     type="button"
