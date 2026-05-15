@@ -91,7 +91,7 @@ const Knows = () => {
                             style={{ transitionDelay: `${0.08 * i}s` }}
                         >
                             <header className="stack-card__head">
-                                <span className="mono mute">// {t(`knows.groups.${g.key}`)}</span>
+                                <span className="mono mute">{'//'} {t(`knows.groups.${g.key}`)}</span>
                                 <span className="mono mute">{String(g.items.length).padStart(2, '0')}</span>
                             </header>
                             <ul className="stack-list">

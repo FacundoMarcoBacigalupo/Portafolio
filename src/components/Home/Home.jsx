@@ -195,7 +195,7 @@ const Home = () => {
 
                 <aside className="identity-card intro-up" style={{ animationDelay: '0.35s' }} aria-label={t('home.identity')}>
                     <div className="identity-header">
-                        <span className="mono mute">// {t('home.identity')}</span>
+                        <span className="mono mute">{'//'} {t('home.identity')}</span>
                         <span className="live">
                             <span className="dot dot--live" />
                             {t('home.live')}
