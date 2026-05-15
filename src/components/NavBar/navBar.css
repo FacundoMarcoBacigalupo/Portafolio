@@ -7,7 +7,7 @@
     padding: 16px 0;
     opacity: 0;
     animation: nav-fade-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    transition: padding 0.3s ease, background 0.3s ease, backdrop-filter 0.3s ease;
+    transition: padding 0.3s ease, background 0.3s ease;
 }
 
 @keyframes nav-fade-in {
@@ -17,9 +17,7 @@
 
 .nav-shell.is-scrolled {
     padding: 10px 0;
-    background: rgba(21, 21, 26, 0.78);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(21, 21, 26, 0.92);
     border-bottom: 1px solid var(--border);
 }
 
