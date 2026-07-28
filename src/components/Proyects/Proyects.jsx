@@ -7,10 +7,11 @@ import mythfImg from '../../assets/img/Mythf.png';
 import EdificacionesJonathan from '../../assets/img/constructura.png';
 import MimosPapel from '../../assets/img/mimosPapel.png';
 import CanuelasProps from '../../assets/img/canuelasProps.png';
-import OportoFightClub from '../../assets/img/oportoFightClub.png';
 import CrmMythf from '../../assets/img/crm.png';
 import TurnosMythF from '../../assets/img/TurnosMythF.png';
 import RutaVivaMythfImg from '../../assets/img/RutaVivaMythF.png';
+import AgenteMythF from '../../assets/img/agenteMythF.webp';
+import RoadMapControl from '../../assets/img/RoadMapControl.webp';
 import './proyects.css';
 
 const projects = [
@@ -18,11 +19,12 @@ const projects = [
     { key: 'crmythf', img: CrmMythf, href: 'https://mythf.site/servicio-paquete-software', tags: ['CRM', 'SaaS'] },
     { key: 'turnosMythf', img: TurnosMythF, href: 'https://turnos.mythf.site', tags: ['SaaS', 'Agendas'] },
     { key: 'rutavivaMythf', img: RutaVivaMythfImg, href: 'https://rutaviva.mythf.site/', tags: ['Transport', 'Fullstack'] },
+    { key: 'agenteMythf', img: AgenteMythF, href: 'https://agente.mythf.site/', tags: ['AI', 'Chatbot'] },
+    { key: 'roadmapControl', img: RoadMapControl, href: 'https://roadmapcontrol.mythf.site/', tags: ['Roadmap', 'Finance'] },
     { key: 'nbstyle', img: NbStyle, href: 'https://ecommerce-nbstyle.netlify.app', tags: ['Ecommerce', 'React'] },
     { key: 'edificacionesJonathan', img: EdificacionesJonathan, href: 'https://edificaciones-jonathan.vercel.app', tags: ['Construction', 'Landing'] },
     { key: 'mimosPapel', img: MimosPapel, href: 'https://mimos-papel.vercel.app', tags: ['Shop', 'Brand'] },
     { key: 'canuelasProps', img: CanuelasProps, href: 'https://canuelas-props.vercel.app', tags: ['Real Estate'] },
-    { key: 'oportoFightClub', img: OportoFightClub, href: 'https://oporto-fight-club.vercel.app', tags: ['Gym', 'Landing'] },
     { key: 'todo', img: ToDo, href: 'https://lista-de-tareas-todo.netlify.app', tags: ['App', 'Utility'] },
     { key: 'blog', img: Blog, href: 'https://it-noticias.netlify.app', tags: ['Blog', 'News'] },
 ];
