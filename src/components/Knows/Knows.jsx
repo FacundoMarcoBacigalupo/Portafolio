@@ -41,6 +41,8 @@ import githubCopilot from '../../assets/icons/si-githubcopilot.svg';
 import cursor from '../../assets/icons/si-cursor.svg';
 import grafana from '../../assets/icons/si-grafana.svg';
 import claudeCode from '../../assets/icons/si-claudecode.svg';
+import opencode from '../../assets/icons/opencode.png';
+import codex from '../../assets/icons/codex.png';
 import './Knows.css';
 
 const groups = [
@@ -130,8 +132,8 @@ const groups = [
             { name: 'Gemini', icon: gemini, href: 'https://gemini.google.com/' },
             { name: 'GitHub Copilot', icon: githubCopilot, href: 'https://github.com/features/copilot' },
             { name: 'Cursor', icon: cursor, href: 'https://www.cursor.com/' },
-            { name: 'Codex', href: 'https://openai.com/codex' },
-            { name: 'OpenCode', href: 'https://opencode.ai/' },
+            { name: 'Codex', icon: codex, href: 'https://openai.com/codex' },
+            { name: 'OpenCode', icon: opencode, href: 'https://opencode.ai/' },
             { name: 'Grafana', icon: grafana, href: 'https://grafana.com/' },
         ],
     },
