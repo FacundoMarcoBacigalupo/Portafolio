@@ -171,8 +171,20 @@
 }
 
 @media (max-width: 640px) {
-    .projects-grid { gap: 16px; }
-    .proj-body { padding: 16px 16px 20px; }
-    .proj-title { font-size: 15px; }
-    .projects .section-sub { font-size: 14.5px; }
+    .projects-grid { gap: 14px; }
+    .proj-thumb { aspect-ratio: 16 / 9; }
+    .proj-body { padding: 12px 14px 16px; gap: 10px; }
+    .proj-title { font-size: 14px; line-height: 1.25; }
+    .proj-tag { font-size: 10px; padding: 2px 6px; }
+    .proj-arrow { width: 28px; height: 28px; padding: 6px; }
+    .projects .section-sub { font-size: 14px; }
+}
+
+@media (max-width: 420px) {
+    .projects-grid { gap: 12px; }
+    .proj-thumb { aspect-ratio: 16 / 9; }
+    .proj-body { padding: 10px 12px 14px; gap: 8px; }
+    .proj-title { font-size: 13px; }
+    .proj-tag { font-size: 9px; padding: 2px 5px; }
+    .proj-meta { gap: 6px; }
 }
