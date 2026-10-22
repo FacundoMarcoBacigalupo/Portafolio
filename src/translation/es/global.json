@@ -30,6 +30,9 @@
             "frontend": "Frontend",
             "backend": "Backend",
             "db": "Bases de datos",
+            "testing": "Testing y Calidad",
+            "cicd": "CI/CD",
+            "services": "Servicios e Integraciones",
             "tools": "Herramientas",
             "patterns": "Patrones & Metodologías"
         }
@@ -37,7 +40,7 @@
     "proyects": {
         "label": "Proyectos",
         "title": "Trabajos seleccionados",
-        "subtitle": "Una muestra de productos web y plataformas que diseñé y desarrollé.",
+        "subtitle": "Una selección curada de productos digitales end-to-end: desde la concepción y el diseño de experiencia hasta el desarrollo, despliegue y evolución continua, orientados a resolver problemas reales con impacto medible.",
         "nbstyle": "NbStyle — Ecommerce de zapatillas",
         "todo": "ToDo — Lista de tareas y buscador de imágenes",
         "mythf": "MythF — Agencia de Software y Marketing",

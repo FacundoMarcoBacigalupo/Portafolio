@@ -30,6 +30,9 @@
             "frontend": "Frontend",
             "backend": "Backend",
             "db": "Databases",
+            "testing": "Testing & Quality",
+            "cicd": "CI/CD",
+            "services": "Services & Integrations",
             "tools": "Tools",
             "patterns": "Patterns & Methodologies"
         }
@@ -37,7 +40,7 @@
     "proyects": {
         "label": "Projects",
         "title": "Selected work",
-        "subtitle": "A selection of web products and platforms I designed and built.",
+        "subtitle": "A curated selection of end-to-end digital products — from experience design and architecture to development, deployment, and continuous evolution — engineered to solve real problems with measurable impact.",
         "nbstyle": "NbStyle — Sneaker Ecommerce",
         "todo": "ToDo — Task list with image search",
         "mythf": "MythF — Software & Marketing Agency",
