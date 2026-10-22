@@ -14,6 +14,33 @@ import java from '../../assets/icons/java.png';
 import csharp from '../../assets/icons/iconCsharp.png';
 import mySQL from '../../assets/icons/mysql.png';
 import kotlin from '../../assets/icons/kotlin.svg';
+import typescript from '../../assets/icons/si-typescript.svg';
+import reactRouter from '../../assets/icons/si-reactrouter.svg';
+import redux from '../../assets/icons/si-redux.svg';
+import tailwindcss from '../../assets/icons/si-tailwindcss.svg';
+import vite from '../../assets/icons/si-vite.svg';
+import socketio from '../../assets/icons/si-socketdotio.svg';
+import express from '../../assets/icons/si-express.svg';
+import springBoot from '../../assets/icons/si-springboot.svg';
+import dotnet from '../../assets/icons/si-dotnet.svg';
+import python from '../../assets/icons/si-python.svg';
+import php from '../../assets/icons/si-php.svg';
+import sqlserver from '../../assets/icons/dev-sqlserver.svg';
+import firebase from '../../assets/icons/si-firebase.svg';
+import sequelize from '../../assets/icons/si-sequelize.svg';
+import vitest from '../../assets/icons/si-vitest.svg';
+import junit from '../../assets/icons/si-junit5.svg';
+import eslint from '../../assets/icons/si-eslint.svg';
+import prettier from '../../assets/icons/si-prettier.svg';
+import jwt from '../../assets/icons/si-jsonwebtokens.svg';
+import mercadopago from '../../assets/icons/si-mercadopago.svg';
+import cloudinary from '../../assets/icons/si-cloudinary.svg';
+import docker from '../../assets/icons/si-docker.svg';
+import gemini from '../../assets/icons/si-googlegemini.svg';
+import githubCopilot from '../../assets/icons/si-githubcopilot.svg';
+import cursor from '../../assets/icons/si-cursor.svg';
+import grafana from '../../assets/icons/si-grafana.svg';
+import claudeCode from '../../assets/icons/si-claudecode.svg';
 import './Knows.css';
 
 const groups = [
@@ -24,16 +51,16 @@ const groups = [
             { name: 'CSS', icon: css, href: 'https://developer.mozilla.org/es/docs/Web/CSS' },
             { name: 'Sass', icon: sass, href: 'https://sass-lang.com' },
             { name: 'JavaScript', icon: javascript, href: 'https://developer.mozilla.org/es/docs/Web/JavaScript' },
-            { name: 'TypeScript', href: 'https://www.typescriptlang.org/' },
+            { name: 'TypeScript', icon: typescript, href: 'https://www.typescriptlang.org/' },
             { name: 'React', icon: reactJs, href: 'https://es.react.dev' },
-            { name: 'React Router', href: 'https://reactrouter.com/' },
-            { name: 'Redux', href: 'https://redux.js.org/' },
+            { name: 'React Router', icon: reactRouter, href: 'https://reactrouter.com/' },
+            { name: 'Redux', icon: redux, href: 'https://redux.js.org/' },
             { name: 'Bootstrap', icon: bootstrap, href: 'https://getbootstrap.com' },
-            { name: 'TailwindCSS', href: 'https://tailwindcss.com/' },
-            { name: 'Vite', href: 'https://vitejs.dev/' },
+            { name: 'TailwindCSS', icon: tailwindcss, href: 'https://tailwindcss.com/' },
+            { name: 'Vite', icon: vite, href: 'https://vitejs.dev/' },
             { name: 'PWA', href: 'https://web.dev/progressive-web-apps/' },
             { name: 'Service Workers', href: 'https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API' },
-            { name: 'Socket.IO', href: 'https://socket.io/' },
+            { name: 'Socket.IO', icon: socketio, href: 'https://socket.io/' },
             { name: 'Responsive', icon: responsive, href: 'https://web.dev/responsive-web-design-basics/' },
         ],
     },
@@ -41,24 +68,24 @@ const groups = [
         key: 'backend',
         items: [
             { name: 'Node.js', icon: nodejs, href: 'https://nodejs.org/en' },
-            { name: 'Express', href: 'https://expressjs.com/' },
+            { name: 'Express', icon: express, href: 'https://expressjs.com/' },
             { name: 'Java', icon: java, href: 'https://dev.java' },
-            { name: 'Spring Boot', href: 'https://spring.io/projects/spring-boot' },
+            { name: 'Spring Boot', icon: springBoot, href: 'https://spring.io/projects/spring-boot' },
             { name: 'C#', icon: csharp, href: 'https://dotnet.microsoft.com/es-es/languages/csharp' },
-            { name: 'ASP.NET Core', href: 'https://dotnet.microsoft.com/es-es/apps/aspnet' },
+            { name: 'ASP.NET Core', icon: dotnet, href: 'https://dotnet.microsoft.com/es-es/apps/aspnet' },
             { name: 'Kotlin', icon: kotlin, href: 'https://kotlinlang.org/' },
-            { name: 'Python', href: 'https://www.python.org/' },
-            { name: 'PHP', href: 'https://www.php.net/' },
+            { name: 'Python', icon: python, href: 'https://www.python.org/' },
+            { name: 'PHP', icon: php, href: 'https://www.php.net/' },
         ],
     },
     {
         key: 'db',
         items: [
             { name: 'MySQL', icon: mySQL, href: 'https://www.mysql.com' },
-            { name: 'SQL Server', href: 'https://www.microsoft.com/sql-server' },
+            { name: 'SQL Server', icon: sqlserver, href: 'https://www.microsoft.com/sql-server' },
             { name: 'MongoDB', icon: mongodb, href: 'https://www.mongodb.com/es' },
-            { name: 'Firebase', href: 'https://firebase.google.com/' },
-            { name: 'Sequelize', href: 'https://sequelize.org/' },
+            { name: 'Firebase', icon: firebase, href: 'https://firebase.google.com/' },
+            { name: 'Sequelize', icon: sequelize, href: 'https://sequelize.org/' },
             { name: 'Primary-Replica Replication', href: 'https://dev.mysql.com/doc/refman/8.0/en/replication.html' },
         ],
     },
@@ -67,11 +94,11 @@ const groups = [
         items: [
             { name: 'TDD', href: 'https://martinfowler.com/bliki/TestDrivenDevelopment.html' },
             { name: 'Automated Testing', href: 'https://www.browserstack.com/guide/automated-testing' },
-            { name: 'Vitest', href: 'https://vitest.dev/' },
-            { name: 'JUnit 4/5', href: 'https://junit.org/' },
+            { name: 'Vitest', icon: vitest, href: 'https://vitest.dev/' },
+            { name: 'JUnit 4/5', icon: junit, href: 'https://junit.org/' },
             { name: 'Mockito', href: 'https://site.mockito.org/' },
-            { name: 'ESLint', href: 'https://eslint.org/' },
-            { name: 'Prettier', href: 'https://prettier.io/' },
+            { name: 'ESLint', icon: eslint, href: 'https://eslint.org/' },
+            { name: 'Prettier', icon: prettier, href: 'https://prettier.io/' },
             { name: 'Integration Testing', href: 'https://martinfowler.com/bliki/IntegrationTest.html' },
             { name: 'E2E Testing', href: 'https://www.browserstack.com/guide/end-to-end-testing' },
         ],
@@ -80,32 +107,32 @@ const groups = [
         key: 'cicd',
         items: [
             { name: 'CI/CD Pipelines', href: 'https://about.gitlab.com/topics/ci-cd/' },
-            { name: 'Git Hooks', href: 'https://git-scm.com/docs/githooks' },
+            { name: 'Git Hooks', icon: git, href: 'https://git-scm.com/docs/githooks' },
         ],
     },
     {
         key: 'services',
         items: [
-            { name: 'JWT', href: 'https://jwt.io/' },
+            { name: 'JWT', icon: jwt, href: 'https://jwt.io/' },
             { name: 'Nodemailer', href: 'https://nodemailer.com/' },
-            { name: 'MercadoPago SDK', href: 'https://www.mercadopago.com.ar/developers' },
-            { name: 'Cloudinary', href: 'https://cloudinary.com/' },
+            { name: 'MercadoPago SDK', icon: mercadopago, href: 'https://www.mercadopago.com.ar/developers' },
+            { name: 'Cloudinary', icon: cloudinary, href: 'https://cloudinary.com/' },
         ],
     },
     {
         key: 'tools',
         items: [
             { name: 'Git', icon: git, href: 'https://git-scm.com' },
-            { name: 'Docker', href: 'https://www.docker.com/' },
+            { name: 'Docker', icon: docker, href: 'https://www.docker.com/' },
             { name: 'Power BI', href: 'https://powerbi.microsoft.com/' },
             { name: 'Power Query', href: 'https://learn.microsoft.com/power-query/' },
-            { name: 'Claude Code', href: 'https://www.claude.com/product/claude-code' },
-            { name: 'Gemini', href: 'https://gemini.google.com/' },
-            { name: 'GitHub Copilot', href: 'https://github.com/features/copilot' },
-            { name: 'Cursor', href: 'https://www.cursor.com/' },
+            { name: 'Claude Code', icon: claudeCode, href: 'https://www.claude.com/product/claude-code' },
+            { name: 'Gemini', icon: gemini, href: 'https://gemini.google.com/' },
+            { name: 'GitHub Copilot', icon: githubCopilot, href: 'https://github.com/features/copilot' },
+            { name: 'Cursor', icon: cursor, href: 'https://www.cursor.com/' },
             { name: 'Codex', href: 'https://openai.com/codex' },
             { name: 'OpenCode', href: 'https://opencode.ai/' },
-            { name: 'Grafana', href: 'https://grafana.com/' },
+            { name: 'Grafana', icon: grafana, href: 'https://grafana.com/' },
         ],
     },
     {
