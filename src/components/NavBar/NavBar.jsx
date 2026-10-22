@@ -1,7 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { saveAs } from 'file-saver';
-import CVFile from '../../assets/files/Facundo_Marco_Bacigalupo_CV.pdf';
 import { smoothScrollToElement } from '../../utils/scroll';
 import './navBar.css';
 
@@ -58,13 +56,6 @@ const NavBar = () => {
         i18n.changeLanguage(currentLang === 'es' ? 'en' : 'es');
     }, [i18n, currentLang]);
 
-    const downloadCV = useCallback(() => {
-        fetch(CVFile)
-            .then((r) => r.blob())
-            .then((blob) => saveAs(blob, 'Facundo_Marco_Bacigalupo_CV.pdf'))
-            .catch((e) => console.error(e));
-    }, []);
-
     return (
         <header className={`nav-shell ${scrolled ? 'is-scrolled' : ''}`}>
             <div className="nav-inner">
@@ -102,14 +93,6 @@ const NavBar = () => {
                         <span className={currentLang === 'es' ? 'on' : ''}>ES</span>
                         <span className="sep">/</span>
                         <span className={currentLang === 'en' ? 'on' : ''}>EN</span>
-                    </button>
-                    <button type="button" className="nav-cv" onClick={downloadCV}>
-                        <span>CV</span>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                            <path d="M12 3v12" />
-                            <path d="m7 10 5 5 5-5" />
-                            <path d="M5 21h14" />
-                        </svg>
                     </button>
                     <button
                         type="button"
