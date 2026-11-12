@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import DecideMenos from '../../assets/img/decideMenos.webp';
 import NbStyle from '../../assets/img/nbStyle.png';
 import ToDo from '../../assets/img/ToDo.png';
 import Blog from '../../assets/img/blog.jpg';
-import mythfImg from '../../assets/img/Mythf.png';
 import EdificacionesJonathan from '../../assets/img/constructura.png';
 import MimosPapel from '../../assets/img/mimosPapel.png';
 import CanuelasProps from '../../assets/img/canuelasProps.png';
@@ -15,18 +15,18 @@ import RoadMapControl from '../../assets/img/RoadMapControl.webp';
 import './proyects.css';
 
 const projects = [
-    { key: 'mythf', img: mythfImg, href: 'https://mythf.site', tags: ['Agency', 'Brand'] },
-    { key: 'crmythf', img: CrmMythf, href: 'https://mythf.site/servicio-paquete-software', tags: ['CRM', 'SaaS'] },
-    { key: 'turnosMythf', img: TurnosMythF, href: 'https://turnos.mythf.site', tags: ['SaaS', 'Agendas'] },
+    { key: 'decideMenos', img: DecideMenos, href: 'https://decide-menos-haz-mas.vercel.app/', tags: ['PWA', 'Habits'] },
+    { key: 'roadmapControl', img: RoadMapControl, href: 'https://roadmapcontrol.mythf.site/', tags: ['Roadmap', 'Finance'] },
+    { key: 'turnosMythf', img: TurnosMythF, href: 'https://turnos.mythf.site/', tags: ['SaaS', 'Agendas'] },
     { key: 'rutavivaMythf', img: RutaVivaMythfImg, href: 'https://rutaviva.mythf.site/', tags: ['Transport', 'Fullstack'] },
     { key: 'agenteMythf', img: AgenteMythF, href: 'https://agente.mythf.site/', tags: ['AI', 'Chatbot'] },
-    { key: 'roadmapControl', img: RoadMapControl, href: 'https://roadmapcontrol.mythf.site/', tags: ['Roadmap', 'Finance'] },
-    { key: 'nbstyle', img: NbStyle, href: 'https://ecommerce-nbstyle.netlify.app', tags: ['Ecommerce', 'React'] },
+    { key: 'canuelasProps', img: CanuelasProps, href: 'https://canuelas-props.vercel.app', tags: ['Real Estate'] },
+    { key: 'crmythf', img: CrmMythf, href: undefined, tags: ['CRM', 'SaaS'] },
     { key: 'edificacionesJonathan', img: EdificacionesJonathan, href: 'https://edificaciones-jonathan.vercel.app', tags: ['Construction', 'Landing'] },
     { key: 'mimosPapel', img: MimosPapel, href: 'https://mimos-papel.vercel.app', tags: ['Shop', 'Brand'] },
-    { key: 'canuelasProps', img: CanuelasProps, href: 'https://canuelas-props.vercel.app', tags: ['Real Estate'] },
-    { key: 'todo', img: ToDo, href: 'https://lista-de-tareas-todo.netlify.app', tags: ['App', 'Utility'] },
     { key: 'blog', img: Blog, href: 'https://it-noticias.netlify.app', tags: ['Blog', 'News'] },
+    { key: 'todo', img: ToDo, href: 'https://lista-de-tareas-todo.netlify.app', tags: ['App', 'Utility'] },
+    { key: 'nbstyle', img: NbStyle, href: 'https://ecommerce-nbstyle.netlify.app', tags: ['Ecommerce', 'React'] },
 ];
 
 const Proyects = () => {
@@ -45,12 +45,12 @@ const Proyects = () => {
                 <p className="section-sub" data-reveal="up">{t('proyects.subtitle')}</p>
 
                 <div className="projects-grid">
-                    {projects.map((p, i) => (
-                        <a
+                    {projects.map((p, i) => {
+                        const CardTag = p.href ? 'a' : 'div';
+                        return (
+                        <CardTag
                             key={p.key}
-                            href={p.href}
-                            target="_blank"
-                            rel="noreferrer"
+                            {...(p.href ? { href: p.href, target: '_blank', rel: 'noreferrer' } : {})}
                             className="proj-card"
                             data-reveal="up"
                             style={{ transitionDelay: `${0.05 * (i % 6)}s` }}
@@ -80,8 +80,9 @@ const Proyects = () => {
                                     </svg>
                                 </h3>
                             </div>
-                        </a>
-                    ))}
+                        </CardTag>
+                        );
+                    })}
                 </div>
             </div>
         </section>
